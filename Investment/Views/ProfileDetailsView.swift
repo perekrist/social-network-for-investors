@@ -62,14 +62,14 @@ class ProfileDetailsView: UIView {
     likesTitleLabel.text = "Реакции"
     
     for label in labels {
-      label.font = UIFont(name: "Poppins-Bold.ttf", size: 18)
+      label.font = .bold(18)
       label.textColor = .black
     }
     
-    onlineLabel.font = UIFont(name: "Poppins-Medium.ttf", size: 18)
+    onlineLabel.font = .medium(18)
     onlineLabel.textColor = .gray
     
-    fullNameLabel.font = UIFont(name: "Poppins-Medium.ttf", size: 20)
+    fullNameLabel.font = .medium(20)
     fullNameLabel.numberOfLines = 2
     
     addSubview(containerView)

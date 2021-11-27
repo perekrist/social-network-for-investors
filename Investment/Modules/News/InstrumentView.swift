@@ -32,7 +32,7 @@ struct InstrumentView: View {
       .frame(maxWidth: .infinity)
       .background(Color.white)
       .cornerRadius(10)
-      //.shadow(color: .accent.opacity(0.3), radius: 10, x: 4, y: 4)
+      .shadow(color: Color.accent.opacity(0.3), radius: 10, x: 4, y: 4)
       .padding(4)
       .onTapGesture {
         onTap?()
