@@ -1,13 +1,11 @@
 //
-//  UserDefaults.swift
+//  UserDefaultsService.swift
 //  Investment
-//
-//  Created by Daniil on 27.11.2021.
 //
 
 import Foundation
 
-class CustomUserDefaults {
+class UserDefaultsService {
   private let tokenKey = "tokenKey"
   private let userDefaults = UserDefaults()
   
@@ -18,5 +16,4 @@ class CustomUserDefaults {
   func setUserToken(_ token: String) {
     userDefaults.setValue(token, forKey: tokenKey)
   }
-  
 }

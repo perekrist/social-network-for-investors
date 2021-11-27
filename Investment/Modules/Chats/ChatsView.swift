@@ -85,6 +85,18 @@ struct ChatsView: View {
         }
         Color.clear.frame(height: 100)
       }
-    }
+    }.background(
+      NavigationLink(isActive: $viewModel.shouldShowMessagesScreen,
+                     destination: {
+                       if let messagesViewModel = viewModel.messagesViewModel {
+                         MessagesView(viewModel: messagesViewModel)
+                       } else {
+                         EmptyView()
+                       }
+                     }, label: {
+                       EmptyView()
+                     })
+        .hidden()
+    )
   }
 }

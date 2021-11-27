@@ -1,17 +1,17 @@
 //
-//  Post.swift
+//  Comment.swift
 //  Investment
 //
 
 import Foundation
 
-struct Post: Codable, Identifiable {
+struct Comment: Codable, Identifiable {
   let id: Int
   let createdAt: String
   let text: String
-  let author: Author
-  let instruments: [Instrument]
-  var comments: [Comment]
+  let blogPostID: Int?
+  let authorID: Int
+  var threadComments: [Comment]?
   
   var date: Date {
     let dateFormatter = DateFormatter()
@@ -24,8 +24,8 @@ struct Post: Codable, Identifiable {
     id = 0
     createdAt = ""
     text = ""
-    author = Author()
-    instruments = []
-    comments = []
+    blogPostID = nil
+    authorID = 0
+    threadComments = nil
   }
 }
