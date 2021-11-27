@@ -22,7 +22,7 @@ class CommentsViewModel: ObservableObject {
   }
   
   func getComment(id: Int) -> Comment {
-    return post.comments.first(where: { $0.id == id }) ?? Comment()
+    return post.comments?.first(where: { $0.id == id }) ?? Comment()
   }
   
   func showThread(id: Int) {
@@ -36,7 +36,7 @@ class CommentsViewModel: ObservableObject {
   func addComment() {
     networkService.sendComment(text: text, blogPostID: post.id) { comment in
       self.text = ""
-      self.post.comments.append(comment)
+      self.post.comments?.append(comment)
     }
   }
 }

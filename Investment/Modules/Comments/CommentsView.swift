@@ -17,7 +17,7 @@ struct CommentsView: View {
         } showInstrument: { id in
           viewModel.showInstrument(id: id)
         }
-        ForEach(viewModel.post.comments) { comment in
+        ForEach(viewModel.post.comments ?? []) { comment in
           CommentView(comment: comment, canThread: true) { id in
             viewModel.showThread(id: id)
           }

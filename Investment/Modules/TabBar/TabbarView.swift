@@ -10,8 +10,9 @@ struct TabbarView: View {
   
   // tabs
   @ObservedObject private var chatsViewModel = ChatsViewModel()
-  @ObservedObject private var homeViewModel = HomeViewModel()
+  @ObservedObject private var instrumentsViewModel = InstrumentsViewModel()
   @ObservedObject private var newsViewModel = NewsViewModel()
+  @ObservedObject private var homeViewModel = HomeViewModel()
   
   var body: some View {
     ZStack(alignment: .bottom) {
@@ -20,7 +21,7 @@ struct TabbarView: View {
         case .chats:
           ChatsView(viewModel: chatsViewModel)
         case .buy:
-          Text("Buy")
+          InstrumentsView(viewModel: instrumentsViewModel)
         case .news:
           NewsView(viewModel: newsViewModel)
         case .bot:
