@@ -90,13 +90,13 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Button" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-HY-pzS">
-                    <rect key="frame" x="60" y="648" width="308" height="50"/>
+                    <rect key="frame" x="60" y="678" width="308" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="2h9-hs-phA"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qQ-xJ-7go">
-                    <rect key="frame" x="130.66666666666666" y="657" width="166.99999999999997" height="32"/>
+                    <rect key="frame" x="130.66666666666666" y="687" width="166.99999999999997" height="32"/>
                     <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Зарегистрироваться"/>
@@ -108,10 +108,10 @@
                     <rect key="frame" x="60" y="566" width="368" height="91"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HaveAccountGoIn" translatesAutoresizingMaskIntoConstraints="NO" id="T9j-97-Jwq">
-                    <rect key="frame" x="115" y="713" width="198" height="30"/>
+                    <rect key="frame" x="115" y="743" width="198" height="30"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94F-a4-66p">
-                    <rect key="frame" x="115" y="713" width="198" height="30"/>
+                    <rect key="frame" x="115" y="743" width="198" height="30"/>
                     <connections>
                         <action selector="loginPressed" destination="-1" eventType="touchUpInside" id="ZCO-b4-4Kg"/>
                     </connections>
@@ -176,7 +176,7 @@
                 <constraint firstItem="Bbt-PX-vnu" firstAttribute="top" secondItem="pGI-8d-kcI" secondAttribute="top" id="ur9-LX-sga"/>
                 <constraint firstItem="ut0-8B-hIR" firstAttribute="top" secondItem="8TO-nX-Ut3" secondAttribute="bottom" constant="5" id="x7z-7i-fDE"/>
                 <constraint firstItem="Bbt-PX-vnu" firstAttribute="leading" secondItem="XgW-DM-N7C" secondAttribute="leading" constant="88" id="z1S-yT-uVJ"/>
-                <constraint firstItem="8qQ-xJ-7go" firstAttribute="top" secondItem="bmR-BQ-5Cc" secondAttribute="bottom" id="ze3-Vd-6JF"/>
+                <constraint firstItem="8qQ-xJ-7go" firstAttribute="top" secondItem="bmR-BQ-5Cc" secondAttribute="bottom" constant="30" id="ze3-Vd-6JF"/>
                 <constraint firstItem="T9j-97-Jwq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="115" id="zhN-6O-OcX"/>
                 <constraint firstItem="pGI-8d-kcI" firstAttribute="top" secondItem="msT-ba-ch2" secondAttribute="bottom" constant="15" id="zxo-lg-ZuW"/>
             </constraints>
