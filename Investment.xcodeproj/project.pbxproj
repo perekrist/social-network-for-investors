@@ -196,6 +196,7 @@
 				CAB5EDE02751E2A6002E149F /* Color+Custom.swift */,
 				CAB5EDE22751E2B7002E149F /* Font+Custom.swift */,
 				CAB5EE3127520E4F002E149F /* Date+Custom.swift */,
+				CAB5EE52275246BF002E149F /* AnyView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,6 +279,7 @@
 			children = (
 				CAB5EE252751F0E8002E149F /* Chat.swift */,
 				CAB5EE2F2752027E002E149F /* Message.swift */,
+				CAB5EE502752394D002E149F /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,6 +290,7 @@
 				CAB5EE2B27520237002E149F /* MessagesView.swift */,
 				CAB5EE2D2752024A002E149F /* MessagesViewModel.swift */,
 				CAB5EE3327520E87002E149F /* MessageRow.swift */,
+				CAB5EE6627528B73002E149F /* SendView.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -311,6 +314,37 @@
 				A5439264275243B000B26005 /* LoginViewController.xib */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		CAB5EE4B275238CB002E149F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE4C275238D5002E149F /* NewsViewModel.swift */,
+				CAB5EE4E275238ED002E149F /* NewsView.swift */,
+				CAB5EE54275270AE002E149F /* InstrumentView.swift */,
+				CAB5EE5D2752764B002E149F /* PostView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		CAB5EE58275271B7002E149F /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE5F275285BA002E149F /* Thread */,
+				CAB5EE59275271C3002E149F /* CommentsViewModel.swift */,
+				CAB5EE5B275275CE002E149F /* CommentsView.swift */,
+				CAB5EE64275286B5002E149F /* CommentView.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		CAB5EE5F275285BA002E149F /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE60275285E3002E149F /* ThreadView.swift */,
+				CAB5EE62275285EF002E149F /* ThreadViewModel.swift */,
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,12 +459,19 @@
 				CAB5EE1C2751E954002E149F /* TabbarViewModel.swift in Sources */,
 				CAB5EDE32751E2B7002E149F /* Font+Custom.swift in Sources */,
 				CAB5EE452752354E002E149F /* LoginViewModel.swift in Sources */,
+				CAB5EE65275286B5002E149F /* CommentView.swift in Sources */,
+				CAB5EE512752394D002E149F /* Post.swift in Sources */,
+				CAB5EE4F275238ED002E149F /* NewsView.swift in Sources */,
 				CAB5EE262751F0E8002E149F /* Chat.swift in Sources */,
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
 				CAB5EE3927522D46002E149F /* HomeView.swift in Sources */,
 				A5439265275243B100B26005 /* LoginViewController.swift in Sources */,
 				CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */,
+				CAB5EE61275285E3002E149F /* ThreadView.swift in Sources */,
+				CAB5EE6727528B73002E149F /* SendView.swift in Sources */,
 				CAB5EE2E2752024A002E149F /* MessagesViewModel.swift in Sources */,
+				CAB5EE63275285EF002E149F /* ThreadViewModel.swift in Sources */,
+				CAB5EE4D275238D5002E149F /* NewsViewModel.swift in Sources */,
 				CAB5EE2C27520237002E149F /* MessagesView.swift in Sources */,
 				CAB5EE4727523565002E149F /* LoginView.swift in Sources */,
 				CAB5EE3227520E50002E149F /* Date+Custom.swift in Sources */,
@@ -441,6 +482,8 @@
 				CAB5EDD22751E234002E149F /* InvestmentApp.swift in Sources */,
 				A54392732752620500B26005 /* LoginPoFactuViewController.swift in Sources */,
 				CAB5EE302752027E002E149F /* Message.swift in Sources */,
+				CAB5EE5E2752764B002E149F /* PostView.swift in Sources */,
+				CAB5EE53275246BF002E149F /* AnyView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,31 +36,9 @@ struct MessagesView: View {
           }
         }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
           .background(Color.background)
-        HStack(spacing: 20) {
-          TextField("Введите сообщение", text: $viewModel.text)
-            .padding()
-            .background(
-              RoundedRectangle(cornerRadius: 10)
-                .foregroundColor(.white)
-            )
-            .overlay(
-              RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray2, lineWidth: 1)
-            )
-          Button {
-            viewModel.sendMessage()
-          } label: {
-            Image("send")
-              .background(
-                Circle()
-                  .frame(width: 40, height: 40)
-                  .foregroundColor(.accent)
-              )
-          }
-        }.padding(.horizontal, 20)
-          .padding(.vertical, 10)
-          .frame(maxWidth: .infinity)
-          .background(Color.accentLight.edgesIgnoringSafeArea(.bottom))
+        SendView(text: $viewModel.text) {
+          viewModel.sendMessage()
+        }
       }
       Rectangle()
         .frame(maxWidth: .infinity, maxHeight: 50, alignment: .top)

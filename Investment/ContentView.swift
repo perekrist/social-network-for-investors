@@ -14,12 +14,12 @@ struct ContentView: View {
   
   var body: some View {
     NavigationView {
-      if isLoggedIn {
+//      if isLoggedIn {
         TabbarView()
-      } else {
-        LoginView()
-          .navigationBarHidden(true)
-      }
+//      } else {
+//        LoginView()
+//          .navigationBarHidden(true)
+//      }
     }.accentColor(.neutral)
   }
 }
