@@ -31,6 +31,10 @@ class InstrumentsViewModel: ObservableObject {
     return instruments.flatMap({ $0.blogPosts ?? [] }).first(where: { $0.id == id }) ?? Post()
   }
   
+  func getInstrument(id: Int) -> Instrument {
+    return instruments.first(where: { $0.id == id }) ?? Instrument()
+  }
+  
   func showPost(id: Int) {
     self.destination = .post(id: id)
   }

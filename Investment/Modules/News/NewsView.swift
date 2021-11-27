@@ -25,8 +25,8 @@ struct NewsView: View {
                        switch viewModel.destination {
                        case .comments(let id):
                          CommentsView(viewModel: CommentsViewModel(post: viewModel.getPost(id: id)))
-                       case .instrument(let id):
-                         EmptyView()
+                       case .instrument:
+                         InstrumentDetailsView(viewModel: InstrumentDetailsViewModel(instrument: viewModel.instrument))
                        default:
                          EmptyView()
                        }

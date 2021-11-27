@@ -11,7 +11,7 @@ struct PostView: View {
   @State var post: Post
   var needShowComments: Bool = true
   @State var showComments: ((Int) -> ())
-  @State var showInstrument: ((Int) -> ())
+  @State var showInstrument: ((Int) -> ())?
   
   var body: some View {
     VStack(alignment: .leading, spacing: 5) {
@@ -31,8 +31,8 @@ struct PostView: View {
       ScrollView(.horizontal) {
         ForEach(post.instruments ?? []) { instrument in
           InstrumentView(instrument: instrument) {
-            showInstrument(instrument.id)
-          }.frame(maxWidth: UIScreen.main.bounds.width / 2)
+            showInstrument?(instrument.id)
+          }.frame(maxWidth: UIScreen.main.bounds.width / 2, minHeight: 150)
         }
       }
       if needShowComments {

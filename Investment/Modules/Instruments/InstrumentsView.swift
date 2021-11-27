@@ -21,7 +21,7 @@ struct InstrumentsView: View {
                      destination: {
                        switch viewModel.destination {
                        case .details(let id):
-                         EmptyView()
+                         InstrumentDetailsView(viewModel: InstrumentDetailsViewModel(instrument: viewModel.getInstrument(id: id)))
                        case .post(let id):
                          CommentsView(viewModel: CommentsViewModel(post: viewModel.getPost(id: id)))
                        default:

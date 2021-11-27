@@ -13,6 +13,12 @@ extension NetworkService {
       completion(instruments)
     }
   }
+  
+  func getInstrument(id: Int, completion: @escaping (Instrument) -> ()) {
+    baseRequest(url: "/financial_instrument/\(id)", method: .get) { instruments in
+      completion(instruments)
+    }
+  }
 }
 
 // MARK: - Comments

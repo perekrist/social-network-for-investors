@@ -76,6 +76,8 @@
 		CAB5EE8C27529C1C002E149F /* NetworkService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE8B27529C1C002E149F /* NetworkService+Extensions.swift */; };
 		CAB5EE912752AC41002E149F /* InstrumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE902752AC41002E149F /* InstrumentsViewModel.swift */; };
 		CAB5EE932752AC54002E149F /* InstrumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE922752AC54002E149F /* InstrumentsView.swift */; };
+		CAB5EE962752B66D002E149F /* InstrumentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE952752B66D002E149F /* InstrumentDetailsView.swift */; };
+		CAB5EE982752B68E002E149F /* InstrumentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +148,8 @@
 		CAB5EE8B27529C1C002E149F /* NetworkService+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Extensions.swift"; sourceTree = "<group>"; };
 		CAB5EE902752AC41002E149F /* InstrumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsViewModel.swift; sourceTree = "<group>"; };
 		CAB5EE922752AC54002E149F /* InstrumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsView.swift; sourceTree = "<group>"; };
+		CAB5EE952752B66D002E149F /* InstrumentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentDetailsView.swift; sourceTree = "<group>"; };
+		CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,10 +402,20 @@
 		CAB5EE8F2752AC29002E149F /* Instruments */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5EE942752B653002E149F /* Instrument Details */,
 				CAB5EE902752AC41002E149F /* InstrumentsViewModel.swift */,
 				CAB5EE922752AC54002E149F /* InstrumentsView.swift */,
 			);
 			path = Instruments;
+			sourceTree = "<group>";
+		};
+		CAB5EE942752B653002E149F /* Instrument Details */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE952752B66D002E149F /* InstrumentDetailsView.swift */,
+				CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */,
+			);
+			path = "Instrument Details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,6 +525,7 @@
 				CAB5EE232751F0A3002E149F /* ChatsViewModel.swift in Sources */,
 				CAB5EE8427529949002E149F /* Instrument.swift in Sources */,
 				CAB5EE75275298B8002E149F /* CommentsView.swift in Sources */,
+				CAB5EE982752B68E002E149F /* InstrumentDetailsViewModel.swift in Sources */,
 				CAB5EE3D27522D81002E149F /* HomeViewController.swift in Sources */,
 				CAB5EDE12751E2A6002E149F /* Color+Custom.swift in Sources */,
 				CAB5EE7C275298B8002E149F /* InstrumentView.swift in Sources */,
@@ -541,6 +556,7 @@
 				CAB5EE3227520E50002E149F /* Date+Custom.swift in Sources */,
 				CAB5EE212751F091002E149F /* ChatsView.swift in Sources */,
 				CAB5EE8C27529C1C002E149F /* NetworkService+Extensions.swift in Sources */,
+				CAB5EE962752B66D002E149F /* InstrumentDetailsView.swift in Sources */,
 				CAB5EE182751E67C002E149F /* NetworkService.swift in Sources */,
 				A54392792752725700B26005 /* UserDefaultsService.swift in Sources */,
 				CAB5EE8627529978002E149F /* Comment.swift in Sources */,

@@ -21,6 +21,17 @@ struct Instrument: Codable, Identifiable {
     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
     return dateFormatter.date(from: createdAt) ?? Date()
   }
+  
+  init() {
+    id = 0
+    createdAt = ""
+    ticker = ""
+    name = ""
+    description = ""
+    instrumentTypeID = 0
+    instrumentType = nil
+    blogPosts = nil
+  }
 }
 
 struct InstrumentType: Codable, Identifiable {
