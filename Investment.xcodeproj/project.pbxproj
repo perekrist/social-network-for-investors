@@ -50,6 +50,9 @@
 		CAB5EE3727522D30002E149F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3627522D2F002E149F /* HomeViewModel.swift */; };
 		CAB5EE3927522D46002E149F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3827522D46002E149F /* HomeView.swift */; };
 		CAB5EE3D27522D81002E149F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3C27522D81002E149F /* HomeViewController.swift */; };
+		CAB5EE452752354E002E149F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE442752354E002E149F /* LoginViewModel.swift */; };
+		CAB5EE4727523565002E149F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE4627523565002E149F /* LoginView.swift */; };
+		CAB5EE4927523587002E149F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE4827523587002E149F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +97,9 @@
 		CAB5EE3627522D2F002E149F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CAB5EE3827522D46002E149F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CAB5EE3C27522D81002E149F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CAB5EE442752354E002E149F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CAB5EE4627523565002E149F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CAB5EE4827523587002E149F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +136,6 @@
 		CAB5EDD02751E234002E149F /* Investment */ = {
 			isa = PBXGroup;
 			children = (
-				CAB5EE3527522D1F002E149F /* Home */,
 				CAB5EE242751F0DF002E149F /* Models */,
 				CAB5EE192751E93A002E149F /* Modules */,
 				CAB5EE162751E66E002E149F /* Services */,
@@ -208,6 +213,8 @@
 		CAB5EE192751E93A002E149F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5EE432752353D002E149F /* Login */,
+				CAB5EE3527522D1F002E149F /* Home */,
 				CAB5EE1F2751F07B002E149F /* Chats */,
 				CAB5EE1A2751E944002E149F /* TabBar */,
 			);
@@ -260,6 +267,16 @@
 				CAB5EE3C27522D81002E149F /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		CAB5EE432752353D002E149F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE442752354E002E149F /* LoginViewModel.swift */,
+				CAB5EE4627523565002E149F /* LoginView.swift */,
+				CAB5EE4827523587002E149F /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,12 +387,15 @@
 				CAB5EE1E2751EA8F002E149F /* TabbarView.swift in Sources */,
 				CAB5EE1C2751E954002E149F /* TabbarViewModel.swift in Sources */,
 				CAB5EDE32751E2B7002E149F /* Font+Custom.swift in Sources */,
+				CAB5EE452752354E002E149F /* LoginViewModel.swift in Sources */,
 				CAB5EE262751F0E8002E149F /* Chat.swift in Sources */,
+				CAB5EE4927523587002E149F /* LoginViewController.swift in Sources */,
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
 				CAB5EE3927522D46002E149F /* HomeView.swift in Sources */,
 				CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */,
 				CAB5EE2E2752024A002E149F /* MessagesViewModel.swift in Sources */,
 				CAB5EE2C27520237002E149F /* MessagesView.swift in Sources */,
+				CAB5EE4727523565002E149F /* LoginView.swift in Sources */,
 				CAB5EE3227520E50002E149F /* Date+Custom.swift in Sources */,
 				CAB5EE212751F091002E149F /* ChatsView.swift in Sources */,
 				CAB5EE182751E67C002E149F /* NetworkService.swift in Sources */,

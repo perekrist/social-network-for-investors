@@ -10,9 +10,16 @@ struct ContentView: View {
     UINavigationBar.appearance().backgroundColor = UIColor.accentLight
   }
   
+  @State var isLoggedIn: Bool = UserDefaults.standard.value(forKey: "isLoggedIn") as? Bool ?? false
+  
   var body: some View {
     NavigationView {
-      TabbarView()
+      if isLoggedIn {
+        TabbarView()
+      } else {
+        LoginView()
+          .navigationBarHidden(true)
+      }
     }.accentColor(.neutral)
   }
 }
