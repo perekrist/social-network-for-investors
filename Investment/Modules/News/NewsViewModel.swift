@@ -11,11 +11,8 @@ enum NewsDestination {
 
 class NewsViewModel: ObservableObject {
   @Published var posts: [Post] = []
-  @Published var destination: NewsDestination? {
-    didSet {
-      self.isLinkActive = true
-    }
-  }
+  @Published var destination: NewsDestination?
+  @Published var instrument: Instrument = Instrument()
   @Published var isLinkActive: Bool = false
   
   private let networkService = NetworkService()
@@ -30,10 +27,15 @@ class NewsViewModel: ObservableObject {
   
   func showComments(id: Int) {
     self.destination = .comments(id: id)
+    self.isLinkActive = true
   }
   
   func showInstrument(id: Int) {
     self.destination = .instrument(id: id)
+    networkService.getInstrument(id: id) { instrument in
+      self.instrument = instrument
+      self.isLinkActive = true
+    }
   }
   
   private func loadPosts() {

@@ -20,13 +20,9 @@ private let timeFormatter: DateFormatter = {
 extension Date {
   func formatString(isShort: Bool = false) -> String {
     let date = Date()
-    let components = Calendar.current.dateComponents([.year, .month, .day], from: self, to: date)
-    
-    if (components.year! >= 1 || components.month! >= 1 || components.day! > 1) && isShort {
-      return "\(yearFormatter.string(from: self)) \(timeFormatter.string(from: self))"
-    } else if components.day == 1 && isShort {
+    if Calendar.autoupdatingCurrent.isDateInYesterday(date) && isShort {
       return "Вчера"
-    } else if components.day == 0 && isShort {
+    } else if Calendar.autoupdatingCurrent.isDateInToday(date) && isShort {
       return "Сегодня"
     } else {
       return timeFormatter.string(from: self)
@@ -35,14 +31,10 @@ extension Date {
   
   func fullFormatString() -> String {
     let date = Date()
-    let components = Calendar.current.dateComponents([.year, .month, .day], from: self, to: date)
-    
-    if (components.year! >= 1 || components.month! >= 1 || components.day! > 1) {
-      return "\(yearFormatter.string(from: self)) \(timeFormatter.string(from: self))"
-    } else if components.day == 1 {
-      return "Вчера \(timeFormatter.string(from: self))"
-    } else if components.day == 0 {
+    if Calendar.autoupdatingCurrent.isDateInToday(date) {
       return "Сегодня \(timeFormatter.string(from: self))"
+    } else if Calendar.autoupdatingCurrent.isDateInYesterday(date) {
+      return "Вчера \(timeFormatter.string(from: self))"
     } else {
       return timeFormatter.string(from: self)
     }

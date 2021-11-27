@@ -1,32 +1,29 @@
 //
-//  NewsView.swift
+//  InstrumentsView.swift
 //  Investment
 //
 
 import SwiftUI
 
-struct NewsView: View {
-  @ObservedObject var viewModel: NewsViewModel
+struct InstrumentsView: View {
+  @ObservedObject var viewModel: InstrumentsViewModel
+  
   var body: some View {
     ScrollView(.vertical) {
-      ForEach(viewModel.posts) { post in
-        PostView(post: post) { id in
-          viewModel.showComments(id: id)
-        } showInstrument: { id in
-          viewModel.showInstrument(id: id)
-        }
-
+      ForEach(viewModel.instruments) { instrument in
+        InstrumentView(instrument: instrument) {
+          viewModel.showDetails(id: instrument.id)
+        }.padding(4)
       }
       Color.clear.frame(height: 100)
-    }
-    .background(
+    }.background(
       NavigationLink(isActive: $viewModel.isLinkActive,
                      destination: {
                        switch viewModel.destination {
-                       case .comments(let id):
+                       case .details(let id):
+                         InstrumentDetailsView(viewModel: InstrumentDetailsViewModel(instrument: viewModel.getInstrument(id: id)))
+                       case .post(let id):
                          CommentsView(viewModel: CommentsViewModel(post: viewModel.getPost(id: id)))
-                       case .instrument:
-                         InstrumentDetailsView(viewModel: InstrumentDetailsViewModel(instrument: viewModel.instrument))
                        default:
                          EmptyView()
                        }

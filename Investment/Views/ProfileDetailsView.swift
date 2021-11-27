@@ -99,10 +99,10 @@ class ProfileDetailsView: UIView {
       label.textColor = .black
     }
     
-    onlineLabel.font = UIFont(name: "Poppins-Medium.ttf", size: 18)
+    onlineLabel.font = .medium(18)
     onlineLabel.textColor = .gray
     
-    fullNameLabel.font = UIFont(name: "Poppins-Medium.ttf", size: 20)
+    fullNameLabel.font = .medium(20)
     fullNameLabel.numberOfLines = 2
     
     likesAmountLabel.textColor = .primary

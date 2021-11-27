@@ -74,6 +74,10 @@
 		CAB5EE8627529978002E149F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE8527529978002E149F /* Comment.swift */; };
 		CAB5EE88275299BD002E149F /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE87275299BD002E149F /* SendView.swift */; };
 		CAB5EE8C27529C1C002E149F /* NetworkService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE8B27529C1C002E149F /* NetworkService+Extensions.swift */; };
+		CAB5EE912752AC41002E149F /* InstrumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE902752AC41002E149F /* InstrumentsViewModel.swift */; };
+		CAB5EE932752AC54002E149F /* InstrumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE922752AC54002E149F /* InstrumentsView.swift */; };
+		CAB5EE962752B66D002E149F /* InstrumentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE952752B66D002E149F /* InstrumentDetailsView.swift */; };
+		CAB5EE982752B68E002E149F /* InstrumentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +146,10 @@
 		CAB5EE8527529978002E149F /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		CAB5EE87275299BD002E149F /* SendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 		CAB5EE8B27529C1C002E149F /* NetworkService+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Extensions.swift"; sourceTree = "<group>"; };
+		CAB5EE902752AC41002E149F /* InstrumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsViewModel.swift; sourceTree = "<group>"; };
+		CAB5EE922752AC54002E149F /* InstrumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsView.swift; sourceTree = "<group>"; };
+		CAB5EE952752B66D002E149F /* InstrumentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentDetailsView.swift; sourceTree = "<group>"; };
+		CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +284,7 @@
 		CAB5EE192751E93A002E149F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5EE8F2752AC29002E149F /* Instruments */,
 				CAB5EE68275298B8002E149F /* Comments */,
 				CAB5EE6F275298B8002E149F /* News */,
 				A543926F275261B200B26005 /* Login */,
@@ -390,6 +399,25 @@
 			path = "Network Service";
 			sourceTree = "<group>";
 		};
+		CAB5EE8F2752AC29002E149F /* Instruments */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE942752B653002E149F /* Instrument Details */,
+				CAB5EE902752AC41002E149F /* InstrumentsViewModel.swift */,
+				CAB5EE922752AC54002E149F /* InstrumentsView.swift */,
+			);
+			path = Instruments;
+			sourceTree = "<group>";
+		};
+		CAB5EE942752B653002E149F /* Instrument Details */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE952752B66D002E149F /* InstrumentDetailsView.swift */,
+				CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */,
+			);
+			path = "Instrument Details";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -497,6 +525,7 @@
 				CAB5EE232751F0A3002E149F /* ChatsViewModel.swift in Sources */,
 				CAB5EE8427529949002E149F /* Instrument.swift in Sources */,
 				CAB5EE75275298B8002E149F /* CommentsView.swift in Sources */,
+				CAB5EE982752B68E002E149F /* InstrumentDetailsViewModel.swift in Sources */,
 				CAB5EE3D27522D81002E149F /* HomeViewController.swift in Sources */,
 				CAB5EDE12751E2A6002E149F /* Color+Custom.swift in Sources */,
 				CAB5EE7C275298B8002E149F /* InstrumentView.swift in Sources */,
@@ -510,6 +539,7 @@
 				CAB5EDE32751E2B7002E149F /* Font+Custom.swift in Sources */,
 				CAB5EE262751F0E8002E149F /* Chat.swift in Sources */,
 				CAB5EE74275298B8002E149F /* CommentsViewModel.swift in Sources */,
+				CAB5EE912752AC41002E149F /* InstrumentsViewModel.swift in Sources */,
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
 				CAB5EE3927522D46002E149F /* HomeView.swift in Sources */,
 				A5439265275243B100B26005 /* RegisterViewController.swift in Sources */,
@@ -519,12 +549,14 @@
 				CAB5EE2E2752024A002E149F /* MessagesViewModel.swift in Sources */,
 				CAB5EE78275298B8002E149F /* CommentView.swift in Sources */,
 				CAB5EE2C27520237002E149F /* MessagesView.swift in Sources */,
+				CAB5EE932752AC54002E149F /* InstrumentsView.swift in Sources */,
 				CAB5EE76275298B8002E149F /* ThreadView.swift in Sources */,
 				CAB5EE4727523565002E149F /* RegisterView.swift in Sources */,
 				CAB5EE7A275298B8002E149F /* NewsViewModel.swift in Sources */,
 				CAB5EE3227520E50002E149F /* Date+Custom.swift in Sources */,
 				CAB5EE212751F091002E149F /* ChatsView.swift in Sources */,
 				CAB5EE8C27529C1C002E149F /* NetworkService+Extensions.swift in Sources */,
+				CAB5EE962752B66D002E149F /* InstrumentDetailsView.swift in Sources */,
 				CAB5EE182751E67C002E149F /* NetworkService.swift in Sources */,
 				A54392792752725700B26005 /* UserDefaultsService.swift in Sources */,
 				CAB5EE8627529978002E149F /* Comment.swift in Sources */,
@@ -667,9 +699,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Investment/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OpenBroker;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -698,9 +731,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Investment/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OpenBroker;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

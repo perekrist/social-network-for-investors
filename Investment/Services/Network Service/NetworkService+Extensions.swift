@@ -6,6 +6,21 @@
 import Foundation
 import Alamofire
 
+// MARK: - Stocks
+extension NetworkService {
+  func getInstruments(completion: @escaping ([Instrument]) -> ()) {
+    baseRequest(url: "/financial_instrument?_start=0&_end=-1", method: .get) { instruments in
+      completion(instruments)
+    }
+  }
+  
+  func getInstrument(id: Int, completion: @escaping (Instrument) -> ()) {
+    baseRequest(url: "/financial_instrument/\(id)", method: .get) { instruments in
+      completion(instruments)
+    }
+  }
+}
+
 // MARK: - Comments
 extension NetworkService {
   func sendThreadComment(text: String, authorID: Int = 1, commentID: Int, completion: @escaping ((Comment) -> ())) {
