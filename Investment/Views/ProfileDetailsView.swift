@@ -52,8 +52,8 @@ class ProfileDetailsView: UIView {
     imageView.layer.cornerRadius = 20
     imageView.layer.borderColor = UIColor.white.cgColor
     
-    separatorView1.backgroundColor = UIColor(named: "SeparatorColor")
-    separatorView2.backgroundColor = UIColor(named: "SeparatorColor")
+    separatorView1.backgroundColor = .separatorColor
+    separatorView2.backgroundColor = .separatorColor
     
     imageView.image = UIImage(named: "AvatarPlaceholder")
     
