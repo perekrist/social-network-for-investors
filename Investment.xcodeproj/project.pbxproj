@@ -57,6 +57,10 @@
 		CAB5EE4F275238ED002E149F /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE4E275238ED002E149F /* NewsView.swift */; };
 		CAB5EE512752394D002E149F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE502752394D002E149F /* Post.swift */; };
 		CAB5EE53275246BF002E149F /* AnyView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE52275246BF002E149F /* AnyView+.swift */; };
+		CAB5EE55275270AF002E149F /* InstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE54275270AE002E149F /* InstrumentView.swift */; };
+		CAB5EE5A275271C3002E149F /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE59275271C3002E149F /* CommentsViewModel.swift */; };
+		CAB5EE5C275275CF002E149F /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE5B275275CE002E149F /* CommentsView.swift */; };
+		CAB5EE5E2752764B002E149F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE5D2752764B002E149F /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +112,10 @@
 		CAB5EE4E275238ED002E149F /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		CAB5EE502752394D002E149F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CAB5EE52275246BF002E149F /* AnyView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyView+.swift"; sourceTree = "<group>"; };
+		CAB5EE54275270AE002E149F /* InstrumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentView.swift; sourceTree = "<group>"; };
+		CAB5EE59275271C3002E149F /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		CAB5EE5B275275CE002E149F /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		CAB5EE5D2752764B002E149F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +230,7 @@
 		CAB5EE192751E93A002E149F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5EE58275271B7002E149F /* Comments */,
 				CAB5EE4B275238CB002E149F /* News */,
 				CAB5EE432752353D002E149F /* Login */,
 				CAB5EE3527522D1F002E149F /* Home */,
@@ -295,8 +304,27 @@
 			children = (
 				CAB5EE4C275238D5002E149F /* NewsViewModel.swift */,
 				CAB5EE4E275238ED002E149F /* NewsView.swift */,
+				CAB5EE54275270AE002E149F /* InstrumentView.swift */,
+				CAB5EE5D2752764B002E149F /* PostView.swift */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		CAB5EE58275271B7002E149F /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE5F275285BA002E149F /* Thread */,
+				CAB5EE59275271C3002E149F /* CommentsViewModel.swift */,
+				CAB5EE5B275275CE002E149F /* CommentsView.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		CAB5EE5F275285BA002E149F /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,7 +439,9 @@
 				CAB5EE512752394D002E149F /* Post.swift in Sources */,
 				CAB5EE4F275238ED002E149F /* NewsView.swift in Sources */,
 				CAB5EE262751F0E8002E149F /* Chat.swift in Sources */,
+				CAB5EE5A275271C3002E149F /* CommentsViewModel.swift in Sources */,
 				CAB5EE4927523587002E149F /* LoginViewController.swift in Sources */,
+				CAB5EE5C275275CF002E149F /* CommentsView.swift in Sources */,
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
 				CAB5EE3927522D46002E149F /* HomeView.swift in Sources */,
 				CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */,
@@ -422,8 +452,10 @@
 				CAB5EE3227520E50002E149F /* Date+Custom.swift in Sources */,
 				CAB5EE212751F091002E149F /* ChatsView.swift in Sources */,
 				CAB5EE182751E67C002E149F /* NetworkService.swift in Sources */,
+				CAB5EE55275270AF002E149F /* InstrumentView.swift in Sources */,
 				CAB5EDD22751E234002E149F /* InvestmentApp.swift in Sources */,
 				CAB5EE302752027E002E149F /* Message.swift in Sources */,
+				CAB5EE5E2752764B002E149F /* PostView.swift in Sources */,
 				CAB5EE53275246BF002E149F /* AnyView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,13 +11,22 @@ struct Post: Codable, Identifiable {
   let text: String
   let author: Author
   let instruments: [Instrument]
-  let comments: [Comment]
+  var comments: [Comment]
   
   var date: Date {
     let dateFormatter = DateFormatter()
     dateFormatter.locale = Locale(identifier: "en_US_POSIX")
     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
     return dateFormatter.date(from: createdAt) ?? Date()
+  }
+  
+  init() {
+    id = 0
+    createdAt = ""
+    text = ""
+    author = Author()
+    instruments = []
+    comments = []
   }
 }
 
@@ -27,6 +36,14 @@ struct Author: Codable, Identifiable {
   let name: String
   let surname: String
   let isVerified: Bool
+  
+  init() {
+    id = 0
+    email = ""
+    name = ""
+    surname = ""
+    isVerified = false
+  }
 }
 
 struct Instrument: Codable, Identifiable {
@@ -51,7 +68,7 @@ struct Comment: Codable, Identifiable {
   let text: String
   let blogPostID: Int?
   let authorID: Int
-  let threadComments: [Comment]?
+  var threadComments: [Comment]?
   
   var date: Date {
     let dateFormatter = DateFormatter()
