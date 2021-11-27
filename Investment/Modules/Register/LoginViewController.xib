@@ -16,8 +16,15 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewControllerXIB" customModule="Investment" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Investment" customModuleProvider="target">
             <connections>
+                <outlet property="emailField" destination="Xoe-3y-nhb" id="nDA-F3-jl3"/>
+                <outlet property="loginButton" destination="94F-a4-66p" id="hAx-VQ-Xmp"/>
+                <outlet property="nameField" destination="IZC-qr-Muo" id="2ur-Y6-Kxd"/>
+                <outlet property="nicknameField" destination="bFc-js-frh" id="ZCg-fy-QNu"/>
+                <outlet property="registerButton" destination="8qQ-xJ-7go" id="JNO-Up-Sgl"/>
+                <outlet property="repeatPasswordField" destination="Zq1-uM-tes" id="iau-R2-Jff"/>
+                <outlet property="surnameField" destination="Bbt-PX-vnu" id="Hvu-1w-a1t"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,7 +51,7 @@
                         <constraint firstAttribute="height" constant="50" id="RcW-C0-bHj"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TextFieldLock" translatesAutoresizingMaskIntoConstraints="NO" id="3ZL-ws-AUU">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TextFieldMail" translatesAutoresizingMaskIntoConstraints="NO" id="3ZL-ws-AUU">
                     <rect key="frame" x="0.0" y="446" width="390" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="MRv-WT-vqJ"/>
@@ -58,8 +65,8 @@
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bbt-PX-vnu">
-                    <rect key="frame" x="75" y="316" width="73.666666666666686" height="50"/>
+                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bbt-PX-vnu">
+                    <rect key="frame" x="75" y="316" width="187" height="50"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -69,39 +76,48 @@
                         <constraint firstAttribute="height" constant="50" id="GtI-hK-Aiz"/>
                     </constraints>
                 </imageView>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Повторите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-uM-tes">
-                    <rect key="frame" x="75" y="511" width="147" height="50"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-uM-tes">
+                    <rect key="frame" x="75" y="511" width="60" height="50"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bFc-js-frh">
-                    <rect key="frame" x="75" y="446" width="59" height="50"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@никнейм" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bFc-js-frh">
+                    <rect key="frame" x="75" y="446" width="81.666666666666686" height="50"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xoe-3y-nhb">
-                    <rect key="frame" x="75" y="381" width="49" height="50"/>
+                    <rect key="frame" x="75" y="381" width="48" height="50"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Button" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-HY-pzS">
-                    <rect key="frame" x="60" y="650" width="270" height="50"/>
+                    <rect key="frame" x="60" y="648" width="270" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="2h9-hs-phA"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qQ-xJ-7go">
-                    <rect key="frame" x="107" y="657" width="176" height="36"/>
+                    <rect key="frame" x="111.66666666666669" y="657" width="167" height="32"/>
                     <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Зарегистрироваться"/>
+                    <connections>
+                        <action selector="registerPressed" destination="-1" eventType="touchUpInside" id="N0H-Gm-A0g"/>
+                    </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PrivacyPolicy" translatesAutoresizingMaskIntoConstraints="NO" id="bmR-BQ-5Cc">
                     <rect key="frame" x="35" y="566" width="355" height="91"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HaveAccountGoIn" translatesAutoresizingMaskIntoConstraints="NO" id="T9j-97-Jwq">
-                    <rect key="frame" x="115" y="715" width="160" height="29"/>
+                    <rect key="frame" x="115" y="713" width="160" height="30"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94F-a4-66p">
+                    <rect key="frame" x="115" y="714" width="168" height="30"/>
+                    <connections>
+                        <action selector="loginPressed" destination="-1" eventType="touchUpInside" id="ZCO-b4-4Kg"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="StartScreenBackground"/>
@@ -125,8 +141,10 @@
                 <constraint firstItem="Zq1-uM-tes" firstAttribute="leading" secondItem="RKj-uE-2gD" secondAttribute="leading" constant="75" id="KTo-bm-vqq"/>
                 <constraint firstItem="2PD-HY-pzS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="KUz-7j-dWy"/>
                 <constraint firstItem="Xoe-3y-nhb" firstAttribute="bottom" secondItem="XgW-DM-N7C" secondAttribute="bottom" id="MPC-hj-gv1"/>
+                <constraint firstItem="94F-a4-66p" firstAttribute="top" secondItem="T9j-97-Jwq" secondAttribute="top" id="MaJ-b5-hOm"/>
                 <constraint firstItem="bFc-js-frh" firstAttribute="leading" secondItem="3ZL-ws-AUU" secondAttribute="leading" constant="75" id="Mty-9i-zbz"/>
                 <constraint firstItem="2PD-HY-pzS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-60" id="Mys-B1-rgO"/>
+                <constraint firstItem="94F-a4-66p" firstAttribute="trailing" secondItem="T9j-97-Jwq" secondAttribute="trailing" id="Pgt-ek-rug"/>
                 <constraint firstItem="8qQ-xJ-7go" firstAttribute="centerX" secondItem="2PD-HY-pzS" secondAttribute="centerX" id="QHW-hS-Led"/>
                 <constraint firstItem="T9j-97-Jwq" firstAttribute="top" secondItem="2PD-HY-pzS" secondAttribute="bottom" constant="15" id="Qdw-gw-qBl"/>
                 <constraint firstItem="bmR-BQ-5Cc" firstAttribute="top" secondItem="RKj-uE-2gD" secondAttribute="bottom" constant="5" id="XAc-KV-krN"/>
@@ -144,9 +162,11 @@
                 <constraint firstItem="RKj-uE-2gD" firstAttribute="top" secondItem="3ZL-ws-AUU" secondAttribute="bottom" constant="15" id="ftZ-KW-vb1"/>
                 <constraint firstItem="8qQ-xJ-7go" firstAttribute="centerY" secondItem="2PD-HY-pzS" secondAttribute="centerY" id="jxk-3O-MO1"/>
                 <constraint firstItem="RKj-uE-2gD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="khw-3F-s9J"/>
+                <constraint firstItem="94F-a4-66p" firstAttribute="bottom" secondItem="T9j-97-Jwq" secondAttribute="bottom" id="lsu-TT-0tF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ut0-8B-hIR" secondAttribute="trailing" constant="100" id="nHh-Gi-n4S"/>
                 <constraint firstItem="3ZL-ws-AUU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nwF-7r-X0d"/>
                 <constraint firstItem="8TO-nX-Ut3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="oJj-G0-Exz"/>
+                <constraint firstItem="94F-a4-66p" firstAttribute="leading" secondItem="T9j-97-Jwq" secondAttribute="leading" id="ovT-Jd-TD3"/>
                 <constraint firstItem="XgW-DM-N7C" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pRw-xN-AAO"/>
                 <constraint firstItem="IZC-qr-Muo" firstAttribute="leading" secondItem="msT-ba-ch2" secondAttribute="leading" constant="75" id="q0X-Kj-zyq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T9j-97-Jwq" secondAttribute="trailing" constant="115" id="sRn-NK-8D8"/>

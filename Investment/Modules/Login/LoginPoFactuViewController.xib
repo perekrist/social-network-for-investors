@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginPoFactuViewController" customModule="Investment" customModuleProvider="target">
+            <connections>
+                <outlet property="emailField" destination="drF-D0-GTG" id="2W3-v6-21L"/>
+                <outlet property="passwordField" destination="tJ6-RF-1zY" id="L33-Yb-luo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BankLogo" translatesAutoresizingMaskIntoConstraints="NO" id="wsr-Cl-U4h">
+                    <rect key="frame" x="60" y="54" width="280" height="84"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TextFieldLock" translatesAutoresizingMaskIntoConstraints="NO" id="qTo-Mw-f7F">
+                    <rect key="frame" x="0.0" y="316" width="390" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hCG-VQ-e1O"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HelloAuth" translatesAutoresizingMaskIntoConstraints="NO" id="B1G-Ei-9vZ">
+                    <rect key="frame" x="100" y="143" width="190" height="88"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TextFieldMail" translatesAutoresizingMaskIntoConstraints="NO" id="W0R-OS-Ep3">
+                    <rect key="frame" x="0.0" y="251" width="390" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ruT-rp-1MF"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="drF-D0-GTG">
+                    <rect key="frame" x="75" y="251" width="49" height="50"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tJ6-RF-1zY">
+                    <rect key="frame" x="75" y="316" width="59" height="50"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Button" translatesAutoresizingMaskIntoConstraints="NO" id="5eF-rP-8Fb">
+                    <rect key="frame" x="0.0" y="650" width="390" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KjA-6m-cNP"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9D-Nq-rhU">
+                    <rect key="frame" x="169" y="657" width="52" height="36"/>
+                    <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Войти"/>
+                    <connections>
+                        <action selector="loginButtonPressed" destination="-1" eventType="touchUpInside" id="rnZ-Wl-W9s"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoAccountRegister" translatesAutoresizingMaskIntoConstraints="NO" id="Sou-3o-tmj">
+                    <rect key="frame" x="50" y="715" width="290" height="33"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkd-31-vUs">
+                    <rect key="frame" x="50" y="715" width="290" height="33"/>
+                    <connections>
+                        <action selector="noAccountButtonPressed" destination="-1" eventType="touchUpInside" id="81c-jh-cB3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="StartScreenBackground"/>
+            <constraints>
+                <constraint firstItem="W0R-OS-Ep3" firstAttribute="top" secondItem="B1G-Ei-9vZ" secondAttribute="bottom" constant="20" id="0iS-fx-yTt"/>
+                <constraint firstItem="B1G-Ei-9vZ" firstAttribute="top" secondItem="wsr-Cl-U4h" secondAttribute="bottom" constant="5" id="255-73-hdV"/>
+                <constraint firstItem="drF-D0-GTG" firstAttribute="bottom" secondItem="W0R-OS-Ep3" secondAttribute="bottom" id="2VZ-i8-ZGH"/>
+                <constraint firstItem="Sou-3o-tmj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="31e-Ro-Qif"/>
+                <constraint firstItem="wsr-Cl-U4h" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="AlR-2a-3Ix"/>
+                <constraint firstItem="Bkd-31-vUs" firstAttribute="leading" secondItem="Sou-3o-tmj" secondAttribute="leading" id="BEY-DG-Gj3"/>
+                <constraint firstItem="5eF-rP-8Fb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Db6-ac-WTE"/>
+                <constraint firstItem="Bkd-31-vUs" firstAttribute="top" secondItem="Sou-3o-tmj" secondAttribute="top" id="Dv6-Tr-hOl"/>
+                <constraint firstItem="tJ6-RF-1zY" firstAttribute="top" secondItem="qTo-Mw-f7F" secondAttribute="top" id="Evg-DI-pwd"/>
+                <constraint firstItem="qTo-Mw-f7F" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JuX-tK-OPz"/>
+                <constraint firstItem="s9D-Nq-rhU" firstAttribute="centerX" secondItem="5eF-rP-8Fb" secondAttribute="centerX" id="Li2-cA-GmP"/>
+                <constraint firstItem="tJ6-RF-1zY" firstAttribute="bottom" secondItem="qTo-Mw-f7F" secondAttribute="bottom" id="Nsb-tG-BLt"/>
+                <constraint firstItem="5eF-rP-8Fb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RSl-BG-yYs"/>
+                <constraint firstItem="Sou-3o-tmj" firstAttribute="top" secondItem="5eF-rP-8Fb" secondAttribute="bottom" constant="15" id="SJb-Dg-PHY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B1G-Ei-9vZ" secondAttribute="trailing" constant="100" id="TcO-ll-Dis"/>
+                <constraint firstItem="s9D-Nq-rhU" firstAttribute="centerY" secondItem="5eF-rP-8Fb" secondAttribute="centerY" id="TpC-cf-Xga"/>
+                <constraint firstItem="drF-D0-GTG" firstAttribute="leading" secondItem="W0R-OS-Ep3" secondAttribute="leading" constant="75" id="Uxj-rv-8ac"/>
+                <constraint firstItem="Bkd-31-vUs" firstAttribute="trailing" secondItem="Sou-3o-tmj" secondAttribute="trailing" id="Vb5-ai-8w2"/>
+                <constraint firstItem="qTo-Mw-f7F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XHl-mI-7Mi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5eF-rP-8Fb" secondAttribute="bottom" constant="110" id="ZKZ-0T-GmV"/>
+                <constraint firstItem="wsr-Cl-U4h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="aNz-a9-ZHP"/>
+                <constraint firstItem="Sou-3o-tmj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-50" id="f2m-2I-AAt"/>
+                <constraint firstItem="Bkd-31-vUs" firstAttribute="bottom" secondItem="Sou-3o-tmj" secondAttribute="bottom" id="ffJ-5K-aR8"/>
+                <constraint firstItem="wsr-Cl-U4h" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-50" id="gAk-kt-0Wl"/>
+                <constraint firstItem="drF-D0-GTG" firstAttribute="top" secondItem="W0R-OS-Ep3" secondAttribute="top" id="hS8-wS-kp4"/>
+                <constraint firstItem="qTo-Mw-f7F" firstAttribute="top" secondItem="W0R-OS-Ep3" secondAttribute="bottom" constant="15" id="md0-1H-SqE"/>
+                <constraint firstItem="W0R-OS-Ep3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qd7-2v-3gN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="B1G-Ei-9vZ" secondAttribute="leading" constant="-100" id="sBp-u1-znC"/>
+                <constraint firstItem="W0R-OS-Ep3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vQh-Zl-1hN"/>
+                <constraint firstItem="tJ6-RF-1zY" firstAttribute="leading" secondItem="qTo-Mw-f7F" secondAttribute="leading" constant="75" id="zwc-Pe-tbu"/>
+            </constraints>
+            <point key="canvasLocation" x="41.53846153846154" y="67.535545023696685"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BankLogo" width="420" height="84"/>
+        <image name="Button" width="473" height="91"/>
+        <image name="HelloAuth" width="231" height="88"/>
+        <image name="NoAccountRegister" width="471" height="33"/>
+        <image name="TextFieldLock" width="473" height="72"/>
+        <image name="TextFieldMail" width="473" height="72"/>
+        <namedColor name="StartScreenBackground">
+            <color red="0.93725490196078431" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

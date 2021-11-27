@@ -8,6 +8,22 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var surnameField: UITextField!
+    @IBOutlet weak var repeatPasswordField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    
+    @IBOutlet weak var nicknameField: UITextField!
+    @IBOutlet weak var registerButton: UIButton!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBAction func registerPressed() {
+        print("hakina")
+    }
+    @IBAction func loginPressed() {
+        navigationController?.pushViewController(LoginPoFactuViewController(nibName: "LoginPoFactuViewController", bundle: nil), animated: true)
+    }
     
     private let viewModel: LoginViewModel = LoginViewModel()
     
