@@ -9,9 +9,9 @@ struct Post: Codable, Identifiable {
   let id: Int
   let createdAt: String
   let text: String
-  let author: Author
-  let instruments: [Instrument]
-  var comments: [Comment]
+  let author: Author?
+  let instruments: [Instrument]?
+  var comments: [Comment]?
   
   var date: Date {
     let dateFormatter = DateFormatter()

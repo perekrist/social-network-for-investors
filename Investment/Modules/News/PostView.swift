@@ -16,9 +16,9 @@ struct PostView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 5) {
       HStack(spacing: 10) {
-        Text(post.author.name)
+        Text(post.author?.name ?? "")
           .font(.bold(30))
-        if post.author.isVerified {
+        if post.author?.isVerified == true {
           Image(systemName: "checkmark.circle.fill")
             .foregroundColor(.green)
         }
@@ -29,10 +29,10 @@ struct PostView: View {
       textWithHashtags(post.text)
         .font(.medium(20))
       ScrollView(.horizontal) {
-        ForEach(post.instruments) { instrument in
+        ForEach(post.instruments ?? []) { instrument in
           InstrumentView(instrument: instrument) {
             showInstrument(instrument.id)
-          }
+          }.frame(maxWidth: UIScreen.main.bounds.width / 2)
         }
       }
       if needShowComments {
@@ -41,7 +41,7 @@ struct PostView: View {
         } label: {
           HStack(spacing: 10) {
             Image(systemName: "bubble.left")
-            Text("Комментарии:  \(post.comments.count)")
+            Text("Комментарии:  \((post.comments ?? []).count)")
               .font(.regular(12))
           }.foregroundColor(.gray2)
         }.padding(.top, 10)

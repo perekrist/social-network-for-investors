@@ -24,6 +24,7 @@ struct InstrumentView: View {
           .font(.regular(12))
       }.foregroundColor(.gray2)
     }.padding(4)
+      .frame(maxWidth: .infinity)
       .background(Color.white)
       .cornerRadius(10)
       .shadow(color: .accent.opacity(0.3), radius: 10, x: 4, y: 4)

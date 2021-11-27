@@ -12,6 +12,8 @@ struct Instrument: Codable, Identifiable {
   let name: String
   let description: String
   let instrumentTypeID: Int
+  let instrumentType: InstrumentType?
+  let blogPosts: [Post]?
   
   var date: Date {
     let dateFormatter = DateFormatter()
@@ -19,4 +21,9 @@ struct Instrument: Codable, Identifiable {
     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
     return dateFormatter.date(from: createdAt) ?? Date()
   }
+}
+
+struct InstrumentType: Codable, Identifiable {
+  let id: Int
+  let name: String
 }
