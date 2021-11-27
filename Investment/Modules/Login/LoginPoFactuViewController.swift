@@ -19,8 +19,17 @@ class LoginPoFactuViewController: UIViewController {
       NetworkService().loginRequest(email: emailField.text ?? "", password: passwordField.text ?? "") { loginResult in
         if loginResult.status != true {
           BannerShowing.shared.showErrorBanner(loginResult.message ?? "Unexpected Error")
+          return
         }
-        print(loginResult)
+        
+        guard let token = loginResult.token else {
+          BannerShowing.shared.showErrorBanner(loginResult.message ?? "Unexpected Error")
+          return
+
+        }
+        CustomUserDefaults().setUserToken(token)
+        
+        
       }
     }
     

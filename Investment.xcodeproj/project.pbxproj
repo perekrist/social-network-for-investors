@@ -12,6 +12,7 @@
 		A5439269275244C800B26005 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5439268275244C800B26005 /* Launch Screen.storyboard */; };
 		A54392732752620500B26005 /* LoginPoFactuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54392712752620500B26005 /* LoginPoFactuViewController.swift */; };
 		A54392742752620500B26005 /* LoginPoFactuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54392722752620500B26005 /* LoginPoFactuViewController.xib */; };
+		A54392792752725700B26005 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54392782752725700B26005 /* UserDefaults.swift */; };
 		CAB5EDD22751E234002E149F /* InvestmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EDD12751E234002E149F /* InvestmentApp.swift */; };
 		CAB5EDD42751E234002E149F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EDD32751E234002E149F /* ContentView.swift */; };
 		CAB5EDD62751E23F002E149F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB5EDD52751E23F002E149F /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		A5439268275244C800B26005 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A54392712752620500B26005 /* LoginPoFactuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPoFactuViewController.swift; sourceTree = "<group>"; };
 		A54392722752620500B26005 /* LoginPoFactuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginPoFactuViewController.xib; sourceTree = "<group>"; };
+		A54392782752725700B26005 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		CAB5EDCE2751E234002E149F /* Investment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Investment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB5EDD12751E234002E149F /* InvestmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentApp.swift; sourceTree = "<group>"; };
 		CAB5EDD32751E234002E149F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB5EE172751E67C002E149F /* NetworkService.swift */,
+				A54392782752725700B26005 /* UserDefaults.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				CAB5EE3227520E50002E149F /* Date+Custom.swift in Sources */,
 				CAB5EE212751F091002E149F /* ChatsView.swift in Sources */,
 				CAB5EE182751E67C002E149F /* NetworkService.swift in Sources */,
+				A54392792752725700B26005 /* UserDefaults.swift in Sources */,
 				CAB5EDD22751E234002E149F /* InvestmentApp.swift in Sources */,
 				A54392732752620500B26005 /* LoginPoFactuViewController.swift in Sources */,
 				CAB5EE302752027E002E149F /* Message.swift in Sources */,

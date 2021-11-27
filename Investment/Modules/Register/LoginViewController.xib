@@ -84,7 +84,7 @@
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@никнейм" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bFc-js-frh">
                     <rect key="frame" x="75" y="446" width="81.666666666666686" height="50"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
-                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                    <textInputTraits key="textInputTraits" textContentType="password"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xoe-3y-nhb">
                     <rect key="frame" x="75" y="381" width="48" height="50"/>
