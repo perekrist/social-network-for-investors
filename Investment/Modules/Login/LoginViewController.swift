@@ -5,12 +5,13 @@
 
 import UIKit
 
-class LoginPoFactuViewController: UIViewController {
+class LoginViewController: UIViewController {
   private let networkService = NetworkService()
   
   @IBOutlet weak var emailField: UITextField!
-  
   @IBOutlet weak var passwordField: UITextField!
+  
+  private var textFields: [UITextField] = []
   
   @IBAction func noAccountButtonPressed() {
     navigationController?.popViewController(animated: true)
@@ -31,7 +32,38 @@ class LoginPoFactuViewController: UIViewController {
     }
   }
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    textFields = [emailField,
+                  passwordField]
+    
+    for field in textFields {
+      field.delegate = self
+      field.returnKeyType = .next
+    }
+    
+    passwordField.returnKeyType = .done
+    
+    
+  }
+  
+}
+
+// MARK: - UITextFieldDelegate
+extension LoginViewController: UITextFieldDelegate {
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    guard let index = textFields.firstIndex(of: textField) else {
+      return true
+    }
+    
+    guard index != textFields.count - 1 else {
+      textField.resignFirstResponder()
+      return true
+    }
+    
+    textFields[index + 1].becomeFirstResponder()
+    
+   return true
   }
 }

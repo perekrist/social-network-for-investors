@@ -34,21 +34,53 @@ class RegisterViewController: UIViewController {
     }
   }
   @IBAction func loginPressed() {
-    navigationController?.pushViewController(LoginPoFactuViewController(nibName: "LoginPoFactuViewController", bundle: nil), animated: true)
+    navigationController?.pushViewController(LoginViewController(nibName: "LoginViewController", bundle: nil), animated: true)
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    textFields = [nameField,
-                  surnameField,
-                  passwordField,
-                  emailField,
-                  nicknameField]
+
     let appearance = UINavigationBarAppearance()
     appearance.configureWithOpaqueBackground()
     appearance.backgroundColor = UIColor(named: "StartScreenBackground")
     navigationController?.navigationBar.standardAppearance = appearance
     navigationController?.navigationBar.scrollEdgeAppearance = appearance
     navigationController?.navigationBar.backgroundColor = UIColor(named: "StartScreenBackground")
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    textFields = [nameField,
+                  surnameField,
+                  emailField,
+                  nicknameField,
+                  passwordField]
+    
+    for field in textFields {
+      field.delegate = self
+      field.returnKeyType = .next
+    }
+    
+    passwordField.returnKeyType = .done
+    
+  }
+}
+
+// MARK: - UITextFieldDelegate
+extension RegisterViewController: UITextFieldDelegate {
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    guard let index = textFields.firstIndex(of: textField) else {
+      return true
+    }
+    
+    guard index != textFields.count - 1 else {
+      textField.resignFirstResponder()
+      return true
+    }
+    
+    textFields[index + 1].becomeFirstResponder()
+    
+   return true
   }
 }

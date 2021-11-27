@@ -19,7 +19,7 @@ struct ContentView: View {
       if isLoggedIn {
         TabbarView()
       } else {
-        LoginView()
+        RegisterView()
           .navigationBarHidden(true)
       }
     }.accentColor(.neutral)

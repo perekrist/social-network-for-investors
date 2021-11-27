@@ -16,7 +16,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Investment" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Investment" customModuleProvider="target">
             <connections>
                 <outlet property="emailField" destination="Xoe-3y-nhb" id="nDA-F3-jl3"/>
                 <outlet property="nameField" destination="IZC-qr-Muo" id="2ur-Y6-Kxd"/>
@@ -59,12 +59,12 @@
                     </constraints>
                 </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IZC-qr-Muo">
-                    <rect key="frame" x="88" y="251" width="310" height="50"/>
+                    <rect key="frame" x="88" y="251" width="260" height="50"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bbt-PX-vnu">
-                    <rect key="frame" x="88" y="316" width="73.666666666666686" height="50"/>
+                    <rect key="frame" x="88" y="316" width="260" height="50"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -75,28 +75,28 @@
                     </constraints>
                 </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-uM-tes">
-                    <rect key="frame" x="88" y="511" width="59" height="50"/>
+                    <rect key="frame" x="88" y="511" width="250" height="50"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@никнейм" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bFc-js-frh">
-                    <rect key="frame" x="88" y="446" width="86.333333333333314" height="50"/>
+                    <rect key="frame" x="88" y="446" width="260" height="50"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                     <textInputTraits key="textInputTraits" textContentType="password"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xoe-3y-nhb">
-                    <rect key="frame" x="88" y="381" width="49" height="50"/>
+                    <rect key="frame" x="88" y="381" width="260" height="50"/>
                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Button" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-HY-pzS">
-                    <rect key="frame" x="60" y="650" width="308" height="50"/>
+                    <rect key="frame" x="60" y="648" width="308" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="2h9-hs-phA"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qQ-xJ-7go">
-                    <rect key="frame" x="126" y="657" width="176" height="36"/>
+                    <rect key="frame" x="130.66666666666666" y="657" width="166.99999999999997" height="32"/>
                     <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Зарегистрироваться"/>
@@ -105,13 +105,13 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PrivacyPolicy" translatesAutoresizingMaskIntoConstraints="NO" id="bmR-BQ-5Cc">
-                    <rect key="frame" x="35" y="566" width="393" height="91"/>
+                    <rect key="frame" x="60" y="566" width="368" height="91"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HaveAccountGoIn" translatesAutoresizingMaskIntoConstraints="NO" id="T9j-97-Jwq">
-                    <rect key="frame" x="115" y="715" width="198" height="30"/>
+                    <rect key="frame" x="115" y="713" width="198" height="30"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94F-a4-66p">
-                    <rect key="frame" x="115" y="715" width="198" height="30"/>
+                    <rect key="frame" x="115" y="713" width="198" height="30"/>
                     <connections>
                         <action selector="loginPressed" destination="-1" eventType="touchUpInside" id="ZCO-b4-4Kg"/>
                     </connections>
@@ -133,7 +133,8 @@
                 <constraint firstItem="XgW-DM-N7C" firstAttribute="top" secondItem="pGI-8d-kcI" secondAttribute="bottom" constant="15" id="8vt-US-yA5"/>
                 <constraint firstItem="3ZL-ws-AUU" firstAttribute="top" secondItem="XgW-DM-N7C" secondAttribute="bottom" constant="15" id="Anm-oc-TDL"/>
                 <constraint firstItem="Xoe-3y-nhb" firstAttribute="leading" secondItem="XgW-DM-N7C" secondAttribute="leading" constant="88" id="DBs-5Z-Ffg"/>
-                <constraint firstItem="IZC-qr-Muo" firstAttribute="trailing" secondItem="msT-ba-ch2" secondAttribute="trailing" constant="-30" id="Eu1-Ps-QKM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zq1-uM-tes" secondAttribute="trailing" constant="90" id="DQb-eL-F5J"/>
+                <constraint firstItem="IZC-qr-Muo" firstAttribute="trailing" secondItem="msT-ba-ch2" secondAttribute="trailing" constant="-80" id="Eu1-Ps-QKM"/>
                 <constraint firstItem="bFc-js-frh" firstAttribute="top" secondItem="3ZL-ws-AUU" secondAttribute="top" id="Iss-Cp-nYf"/>
                 <constraint firstItem="8TO-nX-Ut3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="KFC-ph-pN9"/>
                 <constraint firstItem="Zq1-uM-tes" firstAttribute="leading" secondItem="RKj-uE-2gD" secondAttribute="leading" constant="88" id="KTo-bm-vqq"/>
@@ -142,6 +143,7 @@
                 <constraint firstItem="94F-a4-66p" firstAttribute="top" secondItem="T9j-97-Jwq" secondAttribute="top" id="MaJ-b5-hOm"/>
                 <constraint firstItem="bFc-js-frh" firstAttribute="leading" secondItem="3ZL-ws-AUU" secondAttribute="leading" constant="88" id="Mty-9i-zbz"/>
                 <constraint firstItem="2PD-HY-pzS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-60" id="Mys-B1-rgO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bFc-js-frh" secondAttribute="trailing" constant="80" id="PPW-vw-lsz"/>
                 <constraint firstItem="94F-a4-66p" firstAttribute="trailing" secondItem="T9j-97-Jwq" secondAttribute="trailing" id="Pgt-ek-rug"/>
                 <constraint firstItem="8qQ-xJ-7go" firstAttribute="centerX" secondItem="2PD-HY-pzS" secondAttribute="centerX" id="QHW-hS-Led"/>
                 <constraint firstItem="T9j-97-Jwq" firstAttribute="top" secondItem="2PD-HY-pzS" secondAttribute="bottom" constant="15" id="Qdw-gw-qBl"/>
@@ -155,18 +157,20 @@
                 <constraint firstItem="XgW-DM-N7C" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bZU-Cf-2Lp"/>
                 <constraint firstItem="bFc-js-frh" firstAttribute="bottom" secondItem="3ZL-ws-AUU" secondAttribute="bottom" id="cj6-9k-eA5"/>
                 <constraint firstItem="IZC-qr-Muo" firstAttribute="top" secondItem="msT-ba-ch2" secondAttribute="top" id="eoH-bf-6ua"/>
-                <constraint firstItem="bmR-BQ-5Cc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="est-5d-yVD"/>
+                <constraint firstItem="bmR-BQ-5Cc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="est-5d-yVD"/>
                 <constraint firstItem="T9j-97-Jwq" firstAttribute="centerX" secondItem="2PD-HY-pzS" secondAttribute="centerX" id="eus-8c-aeW"/>
                 <constraint firstItem="RKj-uE-2gD" firstAttribute="top" secondItem="3ZL-ws-AUU" secondAttribute="bottom" constant="15" id="ftZ-KW-vb1"/>
                 <constraint firstItem="8qQ-xJ-7go" firstAttribute="centerY" secondItem="2PD-HY-pzS" secondAttribute="centerY" id="jxk-3O-MO1"/>
                 <constraint firstItem="RKj-uE-2gD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="khw-3F-s9J"/>
                 <constraint firstItem="94F-a4-66p" firstAttribute="bottom" secondItem="T9j-97-Jwq" secondAttribute="bottom" id="lsu-TT-0tF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xoe-3y-nhb" secondAttribute="trailing" constant="80" id="mEx-mk-HCe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ut0-8B-hIR" secondAttribute="trailing" constant="100" id="nHh-Gi-n4S"/>
                 <constraint firstItem="3ZL-ws-AUU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nwF-7r-X0d"/>
                 <constraint firstItem="8TO-nX-Ut3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="oJj-G0-Exz"/>
                 <constraint firstItem="94F-a4-66p" firstAttribute="leading" secondItem="T9j-97-Jwq" secondAttribute="leading" id="ovT-Jd-TD3"/>
                 <constraint firstItem="XgW-DM-N7C" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pRw-xN-AAO"/>
                 <constraint firstItem="IZC-qr-Muo" firstAttribute="leading" secondItem="msT-ba-ch2" secondAttribute="leading" constant="88" id="q0X-Kj-zyq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bbt-PX-vnu" secondAttribute="trailing" constant="80" id="q7f-lM-2yH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T9j-97-Jwq" secondAttribute="trailing" constant="115" id="sRn-NK-8D8"/>
                 <constraint firstItem="pGI-8d-kcI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ujS-0O-nn5"/>
                 <constraint firstItem="Bbt-PX-vnu" firstAttribute="top" secondItem="pGI-8d-kcI" secondAttribute="top" id="ur9-LX-sga"/>

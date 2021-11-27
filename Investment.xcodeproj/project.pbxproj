@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5439265275243B100B26005 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5439263275243B000B26005 /* LoginViewController.swift */; };
-		A5439266275243B100B26005 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5439264275243B000B26005 /* LoginViewController.xib */; };
+		A5439265275243B100B26005 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5439263275243B000B26005 /* RegisterViewController.swift */; };
+		A5439266275243B100B26005 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5439264275243B000B26005 /* RegisterViewController.xib */; };
 		A5439269275244C800B26005 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5439268275244C800B26005 /* Launch Screen.storyboard */; };
-		A54392732752620500B26005 /* LoginPoFactuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54392712752620500B26005 /* LoginPoFactuViewController.swift */; };
-		A54392742752620500B26005 /* LoginPoFactuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54392722752620500B26005 /* LoginPoFactuViewController.xib */; };
+		A54392732752620500B26005 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54392712752620500B26005 /* LoginViewController.swift */; };
+		A54392742752620500B26005 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54392722752620500B26005 /* LoginViewController.xib */; };
 		A54392792752725700B26005 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54392782752725700B26005 /* UserDefaultsService.swift */; };
 		A543927E27527CFF00B26005 /* ProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A543927D27527CFF00B26005 /* ProfileDetailsView.swift */; };
 		CAB5EDD22751E234002E149F /* InvestmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EDD12751E234002E149F /* InvestmentApp.swift */; };
@@ -57,7 +57,7 @@
 		CAB5EE3727522D30002E149F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3627522D2F002E149F /* HomeViewModel.swift */; };
 		CAB5EE3927522D46002E149F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3827522D46002E149F /* HomeView.swift */; };
 		CAB5EE3D27522D81002E149F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3C27522D81002E149F /* HomeViewController.swift */; };
-		CAB5EE4727523565002E149F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE4627523565002E149F /* LoginView.swift */; };
+		CAB5EE4727523565002E149F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE4627523565002E149F /* RegisterView.swift */; };
 		CAB5EE74275298B8002E149F /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE69275298B8002E149F /* CommentsViewModel.swift */; };
 		CAB5EE75275298B8002E149F /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE6A275298B8002E149F /* CommentsView.swift */; };
 		CAB5EE76275298B8002E149F /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE6C275298B8002E149F /* ThreadView.swift */; };
@@ -77,11 +77,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A5439263275243B000B26005 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A5439264275243B000B26005 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A5439263275243B000B26005 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A5439264275243B000B26005 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		A5439268275244C800B26005 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		A54392712752620500B26005 /* LoginPoFactuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPoFactuViewController.swift; sourceTree = "<group>"; };
-		A54392722752620500B26005 /* LoginPoFactuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginPoFactuViewController.xib; sourceTree = "<group>"; };
+		A54392712752620500B26005 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A54392722752620500B26005 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		A54392782752725700B26005 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		A543927D27527CFF00B26005 /* ProfileDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsView.swift; sourceTree = "<group>"; };
 		CAB5EDCE2751E234002E149F /* Investment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Investment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +125,7 @@
 		CAB5EE3627522D2F002E149F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CAB5EE3827522D46002E149F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CAB5EE3C27522D81002E149F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CAB5EE4627523565002E149F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CAB5EE4627523565002E149F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		CAB5EE69275298B8002E149F /* CommentsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
 		CAB5EE6A275298B8002E149F /* CommentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		CAB5EE6C275298B8002E149F /* ThreadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
@@ -162,8 +162,8 @@
 		A543926F275261B200B26005 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				A54392712752620500B26005 /* LoginPoFactuViewController.swift */,
-				A54392722752620500B26005 /* LoginPoFactuViewController.xib */,
+				A54392712752620500B26005 /* LoginViewController.swift */,
+				A54392722752620500B26005 /* LoginViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -343,9 +343,9 @@
 		CAB5EE432752353D002E149F /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				CAB5EE4627523565002E149F /* LoginView.swift */,
-				A5439263275243B000B26005 /* LoginViewController.swift */,
-				A5439264275243B000B26005 /* LoginViewController.xib */,
+				CAB5EE4627523565002E149F /* RegisterView.swift */,
+				A5439263275243B000B26005 /* RegisterViewController.swift */,
+				A5439264275243B000B26005 /* RegisterViewController.xib */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -468,7 +468,7 @@
 				CAB5EDFA2751E407002E149F /* Poppins-Bold.ttf in Resources */,
 				A5439269275244C800B26005 /* Launch Screen.storyboard in Resources */,
 				CAB5EDF72751E407002E149F /* Poppins-BoldItalic.ttf in Resources */,
-				A5439266275243B100B26005 /* LoginViewController.xib in Resources */,
+				A5439266275243B100B26005 /* RegisterViewController.xib in Resources */,
 				CAB5EDFB2751E407002E149F /* Poppins-ExtraBold.ttf in Resources */,
 				CAB5EE002751E407002E149F /* Poppins-Italic.ttf in Resources */,
 				CAB5EE082751E407002E149F /* Poppins-Thin.ttf in Resources */,
@@ -479,7 +479,7 @@
 				CAB5EE042751E407002E149F /* Poppins-Light.ttf in Resources */,
 				CAB5EDFD2751E407002E149F /* Poppins-SemiBold.ttf in Resources */,
 				CAB5EDFF2751E407002E149F /* Poppins-Regular.ttf in Resources */,
-				A54392742752620500B26005 /* LoginPoFactuViewController.xib in Resources */,
+				A54392742752620500B26005 /* LoginViewController.xib in Resources */,
 				CAB5EDD62751E23F002E149F /* Assets.xcassets in Resources */,
 				CAB5EE072751E407002E149F /* Poppins-ThinItalic.ttf in Resources */,
 				CAB5EDF92751E407002E149F /* Poppins-Medium.ttf in Resources */,
@@ -512,7 +512,7 @@
 				CAB5EE74275298B8002E149F /* CommentsViewModel.swift in Sources */,
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
 				CAB5EE3927522D46002E149F /* HomeView.swift in Sources */,
-				A5439265275243B100B26005 /* LoginViewController.swift in Sources */,
+				A5439265275243B100B26005 /* RegisterViewController.swift in Sources */,
 				CAB5EE7E275298C4002E149F /* Post.swift in Sources */,
 				CAB5EE80275298F4002E149F /* AuthResult.swift in Sources */,
 				CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */,
@@ -520,7 +520,7 @@
 				CAB5EE78275298B8002E149F /* CommentView.swift in Sources */,
 				CAB5EE2C27520237002E149F /* MessagesView.swift in Sources */,
 				CAB5EE76275298B8002E149F /* ThreadView.swift in Sources */,
-				CAB5EE4727523565002E149F /* LoginView.swift in Sources */,
+				CAB5EE4727523565002E149F /* RegisterView.swift in Sources */,
 				CAB5EE7A275298B8002E149F /* NewsViewModel.swift in Sources */,
 				CAB5EE3227520E50002E149F /* Date+Custom.swift in Sources */,
 				CAB5EE212751F091002E149F /* ChatsView.swift in Sources */,
@@ -530,7 +530,7 @@
 				CAB5EE8627529978002E149F /* Comment.swift in Sources */,
 				A543927E27527CFF00B26005 /* ProfileDetailsView.swift in Sources */,
 				CAB5EDD22751E234002E149F /* InvestmentApp.swift in Sources */,
-				A54392732752620500B26005 /* LoginPoFactuViewController.swift in Sources */,
+				A54392732752620500B26005 /* LoginViewController.swift in Sources */,
 				CAB5EE88275299BD002E149F /* SendView.swift in Sources */,
 				CAB5EE302752027E002E149F /* Message.swift in Sources */,
 			);

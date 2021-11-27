@@ -5,9 +5,9 @@
 
 import SwiftUI
 
-struct LoginView: UIViewControllerRepresentable {
+struct RegisterView: UIViewControllerRepresentable {
   func makeUIViewController(context: Context) -> UIViewController {
-    return LoginViewController(nibName: "LoginViewController", bundle: nil)
+    return RegisterViewController(nibName: "RegisterViewController", bundle: nil)
   }
   func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
