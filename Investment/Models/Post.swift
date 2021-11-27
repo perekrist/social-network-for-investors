@@ -85,4 +85,14 @@ struct Comment: Codable, Identifiable {
     authorID = 0
     threadComments = nil
   }
+  
+  init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    id = try container.decodeIfPresent(Int.self, forKey: .id) ?? 0
+    text = try container.decodeIfPresent(String.self, forKey: .text) ?? ""
+    createdAt = try container.decodeIfPresent(String.self, forKey: .createdAt) ?? ""
+    blogPostID = try container.decodeIfPresent(Int.self, forKey: .blogPostID)
+    authorID = try container.decodeIfPresent(Int.self, forKey: .authorID) ?? 0
+    threadComments = try container.decodeIfPresent([Comment].self, forKey: .threadComments)
+  }
 }

@@ -64,6 +64,7 @@
 		CAB5EE61275285E3002E149F /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE60275285E3002E149F /* ThreadView.swift */; };
 		CAB5EE63275285EF002E149F /* ThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE62275285EF002E149F /* ThreadViewModel.swift */; };
 		CAB5EE65275286B5002E149F /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE64275286B5002E149F /* CommentView.swift */; };
+		CAB5EE6727528B73002E149F /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE6627528B73002E149F /* SendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +123,7 @@
 		CAB5EE60275285E3002E149F /* ThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
 		CAB5EE62275285EF002E149F /* ThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadViewModel.swift; sourceTree = "<group>"; };
 		CAB5EE64275286B5002E149F /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		CAB5EE6627528B73002E149F /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 				CAB5EE2B27520237002E149F /* MessagesView.swift */,
 				CAB5EE2D2752024A002E149F /* MessagesViewModel.swift */,
 				CAB5EE3327520E87002E149F /* MessageRow.swift */,
+				CAB5EE6627528B73002E149F /* SendView.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				CAB5EE3927522D46002E149F /* HomeView.swift in Sources */,
 				CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */,
 				CAB5EE61275285E3002E149F /* ThreadView.swift in Sources */,
+				CAB5EE6727528B73002E149F /* SendView.swift in Sources */,
 				CAB5EE2E2752024A002E149F /* MessagesViewModel.swift in Sources */,
 				CAB5EE63275285EF002E149F /* ThreadViewModel.swift in Sources */,
 				CAB5EE4D275238D5002E149F /* NewsViewModel.swift in Sources */,

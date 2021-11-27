@@ -7,6 +7,15 @@ import Foundation
 import Alamofire
 
 extension NetworkService {
+  func sendThreadComment(text: String, authorID: Int = 1, commentID: Int, completion: @escaping ((Comment) -> ())) {
+    let params: Parameters = ["text": text,
+                              "authorID": authorID,
+                              "commentID": commentID]
+    baseRequest(url: "/thread_comment", method: .post, params: params) { comment in
+      completion(comment)
+    }
+  }
+  
   func sendComment(text: String, authorID: Int = 1, blogPostID: Int, completion: @escaping ((Comment) -> ())) {
     let params: Parameters = ["text": text,
                               "authorID": authorID,
@@ -34,7 +43,11 @@ class NetworkService {
   
   func baseRequest<T: Decodable>(url: String, method: HTTPMethod, params: Parameters? = nil,
                                  completion: @escaping ((T) -> Void)) {
-    AF.request(NetworkService.baseURL + url, method: method, parameters: params).responseData { response in
+    AF.request(NetworkService.baseURL + url, method: method, parameters: params,
+               encoding: JSONEncoding.default).responseData { response in
+      print(response.request)
+      print(response.request?.httpBody)
+      
       switch response.result {
       case .success(let data):
         let decoder = JSONDecoder()

@@ -18,7 +18,10 @@ struct ThreadView: View {
             CommentView(comment: comment, canThread: false)
           }
         }
+        SendView(text: $viewModel.text) {
+          viewModel.addComment()
+        }
       }
-    }
+    }.navigationTitle("Вложенные комментарии")
   }
 }

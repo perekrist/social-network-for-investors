@@ -9,10 +9,10 @@ struct CommentsView: View {
   @ObservedObject var viewModel: CommentsViewModel
   
   var body: some View {
-    ZStack {
+    ZStack(alignment: .bottom) {
       Color.accentLight.edgesIgnoringSafeArea(.all)
       ScrollView(.vertical) {
-        PostView(post: viewModel.post) { _ in
+        PostView(post: viewModel.post, needShowComments: false) { _ in
           // do nothing
         } showInstrument: { id in
           viewModel.showInstrument(id: id)
@@ -22,8 +22,13 @@ struct CommentsView: View {
             viewModel.showThread(id: id)
           }
         }
+        Color.clear.frame(height: 100)
+      }
+      SendView(text: $viewModel.text) {
+        viewModel.addComment()
       }
     }.navigationBarTitleDisplayMode(.inline)
+      .navigationTitle("Комментарии")
       .background(
         NavigationLink(isActive: $viewModel.isLinkActive,
                        destination: {

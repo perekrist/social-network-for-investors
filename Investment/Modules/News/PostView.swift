@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PostView: View {
   @State var post: Post
+  var needShowComments: Bool = true
   @State var showComments: ((Int) -> ())
   @State var showInstrument: ((Int) -> ())
   
@@ -34,15 +35,17 @@ struct PostView: View {
           }
         }
       }
-      Button {
-        showComments(post.id)
-      } label: {
-        HStack(spacing: 10) {
-          Image(systemName: "bubble.left")
-          Text("Комментарии:  \(post.comments.count)")
-            .font(.regular(12))
-        }.foregroundColor(.gray2)
-      }.padding(.top, 10)
+      if needShowComments {
+        Button {
+          showComments(post.id)
+        } label: {
+          HStack(spacing: 10) {
+            Image(systemName: "bubble.left")
+            Text("Комментарии:  \(post.comments.count)")
+              .font(.regular(12))
+          }.foregroundColor(.gray2)
+        }.padding(.top, 10)
+      }
       
     }.padding()
       .frame(maxWidth: .infinity, alignment: .leading)
