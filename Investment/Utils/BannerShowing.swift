@@ -13,7 +13,7 @@ class BannerShowing {
     showBanner(text, style: .info)
   }
   
-  func showErrorBanner(_ text: String) {
+  func showErrorBanner(_ text: String = "Unexpected Error") {
     showBanner(text, style: .danger)
   }
   

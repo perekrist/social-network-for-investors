@@ -16,7 +16,12 @@ class LoginPoFactuViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func loginButtonPressed() {
-        print("login")
+      NetworkService().loginRequest(email: emailField.text ?? "", password: passwordField.text ?? "") { loginResult in
+        if loginResult.status != true {
+          BannerShowing.shared.showErrorBanner(loginResult.message ?? "Unexpected Error")
+        }
+        print(loginResult)
+      }
     }
     
     override func viewDidLoad() {
