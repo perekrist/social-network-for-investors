@@ -27,6 +27,7 @@ class LoginPoFactuViewController: UIViewController {
           return
 
         }
+        print(loginResult)
         CustomUserDefaults().setUserToken(token)
         
         

@@ -72,10 +72,10 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoAccountRegister" translatesAutoresizingMaskIntoConstraints="NO" id="Sou-3o-tmj">
-                    <rect key="frame" x="50" y="715" width="290" height="33"/>
+                    <rect key="frame" x="60" y="715" width="270" height="33"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkd-31-vUs">
-                    <rect key="frame" x="50" y="715" width="290" height="33"/>
+                    <rect key="frame" x="60" y="715" width="270" height="33"/>
                     <connections>
                         <action selector="noAccountButtonPressed" destination="-1" eventType="touchUpInside" id="81c-jh-cB3"/>
                     </connections>
@@ -87,7 +87,7 @@
                 <constraint firstItem="W0R-OS-Ep3" firstAttribute="top" secondItem="B1G-Ei-9vZ" secondAttribute="bottom" constant="20" id="0iS-fx-yTt"/>
                 <constraint firstItem="B1G-Ei-9vZ" firstAttribute="top" secondItem="wsr-Cl-U4h" secondAttribute="bottom" constant="5" id="255-73-hdV"/>
                 <constraint firstItem="drF-D0-GTG" firstAttribute="bottom" secondItem="W0R-OS-Ep3" secondAttribute="bottom" id="2VZ-i8-ZGH"/>
-                <constraint firstItem="Sou-3o-tmj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="31e-Ro-Qif"/>
+                <constraint firstItem="Sou-3o-tmj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="31e-Ro-Qif"/>
                 <constraint firstItem="wsr-Cl-U4h" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="AlR-2a-3Ix"/>
                 <constraint firstItem="Bkd-31-vUs" firstAttribute="leading" secondItem="Sou-3o-tmj" secondAttribute="leading" id="BEY-DG-Gj3"/>
                 <constraint firstItem="5eF-rP-8Fb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Db6-ac-WTE"/>
@@ -105,7 +105,7 @@
                 <constraint firstItem="qTo-Mw-f7F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XHl-mI-7Mi"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5eF-rP-8Fb" secondAttribute="bottom" constant="110" id="ZKZ-0T-GmV"/>
                 <constraint firstItem="wsr-Cl-U4h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="aNz-a9-ZHP"/>
-                <constraint firstItem="Sou-3o-tmj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-50" id="f2m-2I-AAt"/>
+                <constraint firstItem="Sou-3o-tmj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-60" id="f2m-2I-AAt"/>
                 <constraint firstItem="Bkd-31-vUs" firstAttribute="bottom" secondItem="Sou-3o-tmj" secondAttribute="bottom" id="ffJ-5K-aR8"/>
                 <constraint firstItem="wsr-Cl-U4h" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-50" id="gAk-kt-0Wl"/>
                 <constraint firstItem="drF-D0-GTG" firstAttribute="top" secondItem="W0R-OS-Ep3" secondAttribute="top" id="hS8-wS-kp4"/>
