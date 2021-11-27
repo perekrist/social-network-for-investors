@@ -10,16 +10,14 @@ import UIKit
 class LoginViewController: UIViewController {
   @IBOutlet weak var nameField: UITextField!
   @IBOutlet weak var surnameField: UITextField!
-  @IBOutlet weak var repeatPasswordField: UITextField!
+  @IBOutlet weak var passwordField: UITextField!
   @IBOutlet weak var emailField: UITextField!
-  
   @IBOutlet weak var nicknameField: UITextField!
-  @IBOutlet weak var registerButton: UIButton!
   
-  @IBOutlet weak var loginButton: UIButton!
+  private var textFields: [UITextField] = []
   
   @IBAction func registerPressed() {
-    NetworkService().registerRequest(email: emailField.text ?? "", password: repeatPasswordField.text ?? "", name: nameField.text ?? "", surname: surnameField.text ?? "", nickname: nicknameField.text ?? "") { loginResult in
+    NetworkService().registerRequest(email: emailField.text ?? "", password: passwordField.text ?? "", name: nameField.text ?? "", surname: surnameField.text ?? "", nickname: nicknameField.text ?? "") { loginResult in
       if loginResult.status != true {
         BannerShowing.shared.showErrorBanner(loginResult.message ?? "Unexpected Error")
         return
@@ -43,6 +41,11 @@ class LoginViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    textFields = [nameField,
+                  surnameField,
+                  passwordField,
+                  emailField,
+                  nicknameField]
     let appearance = UINavigationBarAppearance()
     appearance.configureWithOpaqueBackground()
     appearance.backgroundColor = UIColor(named: "StartScreenBackground")
