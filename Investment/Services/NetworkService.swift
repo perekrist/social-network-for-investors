@@ -6,8 +6,16 @@
 import Foundation
 import Alamofire
 
+extension NetworkService {
+  func getPosts(completion: @escaping ([Post]) -> ()) {
+    baseRequest(url: "/blog_post?_start=0&_end=-1", method: .get) { posts in
+      completion(posts)
+    }
+  }
+}
+
 class NetworkService {
-  static let baseURL = ""
+  static let baseURL = "http://invest.somnoynadno.ru/api/v1"
   
   func baseRequest<T: Decodable>(url: String, method: HTTPMethod, completion: @escaping ((T) -> Void)) {
     AF.request(NetworkService.baseURL + url, method: method).responseData { response in
@@ -18,9 +26,11 @@ class NetworkService {
           let decodedData = try decoder.decode(T.self, from: data)
           completion(decodedData)
         } catch (let error) {
+          print(String(describing: error))
           BannerShowing.shared.showErrorBanner("catch:" + error.localizedDescription)
         }
       case .failure(let error):
+        print(String(describing: error))
         BannerShowing.shared.showErrorBanner(error.localizedDescription)
       }
     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -53,6 +53,10 @@
 		CAB5EE452752354E002E149F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE442752354E002E149F /* LoginViewModel.swift */; };
 		CAB5EE4727523565002E149F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE4627523565002E149F /* LoginView.swift */; };
 		CAB5EE4927523587002E149F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE4827523587002E149F /* LoginViewController.swift */; };
+		CAB5EE4D275238D5002E149F /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE4C275238D5002E149F /* NewsViewModel.swift */; };
+		CAB5EE4F275238ED002E149F /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE4E275238ED002E149F /* NewsView.swift */; };
+		CAB5EE512752394D002E149F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE502752394D002E149F /* Post.swift */; };
+		CAB5EE53275246BF002E149F /* AnyView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE52275246BF002E149F /* AnyView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +104,10 @@
 		CAB5EE442752354E002E149F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CAB5EE4627523565002E149F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CAB5EE4827523587002E149F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CAB5EE4C275238D5002E149F /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		CAB5EE4E275238ED002E149F /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		CAB5EE502752394D002E149F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CAB5EE52275246BF002E149F /* AnyView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,7 @@
 				CAB5EDE02751E2A6002E149F /* Color+Custom.swift */,
 				CAB5EDE22751E2B7002E149F /* Font+Custom.swift */,
 				CAB5EE3127520E4F002E149F /* Date+Custom.swift */,
+				CAB5EE52275246BF002E149F /* AnyView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,6 +222,7 @@
 		CAB5EE192751E93A002E149F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5EE4B275238CB002E149F /* News */,
 				CAB5EE432752353D002E149F /* Login */,
 				CAB5EE3527522D1F002E149F /* Home */,
 				CAB5EE1F2751F07B002E149F /* Chats */,
@@ -245,6 +255,7 @@
 			children = (
 				CAB5EE252751F0E8002E149F /* Chat.swift */,
 				CAB5EE2F2752027E002E149F /* Message.swift */,
+				CAB5EE502752394D002E149F /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +288,15 @@
 				CAB5EE4827523587002E149F /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CAB5EE4B275238CB002E149F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE4C275238D5002E149F /* NewsViewModel.swift */,
+				CAB5EE4E275238ED002E149F /* NewsView.swift */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +341,7 @@
 				};
 			};
 			buildConfigurationList = CAB5EDC92751E234002E149F /* Build configuration list for PBXProject "Investment" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -388,12 +408,15 @@
 				CAB5EE1C2751E954002E149F /* TabbarViewModel.swift in Sources */,
 				CAB5EDE32751E2B7002E149F /* Font+Custom.swift in Sources */,
 				CAB5EE452752354E002E149F /* LoginViewModel.swift in Sources */,
+				CAB5EE512752394D002E149F /* Post.swift in Sources */,
+				CAB5EE4F275238ED002E149F /* NewsView.swift in Sources */,
 				CAB5EE262751F0E8002E149F /* Chat.swift in Sources */,
 				CAB5EE4927523587002E149F /* LoginViewController.swift in Sources */,
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
 				CAB5EE3927522D46002E149F /* HomeView.swift in Sources */,
 				CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */,
 				CAB5EE2E2752024A002E149F /* MessagesViewModel.swift in Sources */,
+				CAB5EE4D275238D5002E149F /* NewsViewModel.swift in Sources */,
 				CAB5EE2C27520237002E149F /* MessagesView.swift in Sources */,
 				CAB5EE4727523565002E149F /* LoginView.swift in Sources */,
 				CAB5EE3227520E50002E149F /* Date+Custom.swift in Sources */,
@@ -401,6 +424,7 @@
 				CAB5EE182751E67C002E149F /* NetworkService.swift in Sources */,
 				CAB5EDD22751E234002E149F /* InvestmentApp.swift in Sources */,
 				CAB5EE302752027E002E149F /* Message.swift in Sources */,
+				CAB5EE53275246BF002E149F /* AnyView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
