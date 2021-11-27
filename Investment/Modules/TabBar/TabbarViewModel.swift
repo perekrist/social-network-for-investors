@@ -10,5 +10,5 @@ enum Tabs: String, CaseIterable {
 }
 
 class TabbarViewModel: ObservableObject {
-  @Published var currentTab: Tabs = .news
+  @Published var currentTab: Tabs = .chats
 }

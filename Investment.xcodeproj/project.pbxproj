@@ -38,6 +38,10 @@
 		CAB5EE182751E67C002E149F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE172751E67C002E149F /* NetworkService.swift */; };
 		CAB5EE1C2751E954002E149F /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE1B2751E954002E149F /* TabbarViewModel.swift */; };
 		CAB5EE1E2751EA8F002E149F /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE1D2751EA8F002E149F /* TabbarView.swift */; };
+		CAB5EE212751F091002E149F /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE202751F091002E149F /* ChatsView.swift */; };
+		CAB5EE232751F0A3002E149F /* ChatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE222751F0A3002E149F /* ChatsViewModel.swift */; };
+		CAB5EE262751F0E8002E149F /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE252751F0E8002E149F /* Chat.swift */; };
+		CAB5EE292751F617002E149F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CAB5EE282751F617002E149F /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +75,9 @@
 		CAB5EE172751E67C002E149F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CAB5EE1B2751E954002E149F /* TabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewModel.swift; sourceTree = "<group>"; };
 		CAB5EE1D2751EA8F002E149F /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		CAB5EE202751F091002E149F /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		CAB5EE222751F0A3002E149F /* ChatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewModel.swift; sourceTree = "<group>"; };
+		CAB5EE252751F0E8002E149F /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB5EE292751F617002E149F /* SDWebImageSwiftUI in Frameworks */,
 				CAB5EE152751E630002E149F /* SnapKit in Frameworks */,
 				CAB5EE0F2751E5F9002E149F /* NotificationBannerSwift in Frameworks */,
 				CAB5EE122751E621002E149F /* Alamofire in Frameworks */,
@@ -106,6 +114,7 @@
 		CAB5EDD02751E234002E149F /* Investment */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5EE242751F0DF002E149F /* Models */,
 				CAB5EE192751E93A002E149F /* Modules */,
 				CAB5EE162751E66E002E149F /* Services */,
 				CAB5EE0A2751E57E002E149F /* Utils */,
@@ -181,6 +190,7 @@
 		CAB5EE192751E93A002E149F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5EE1F2751F07B002E149F /* Chats */,
 				CAB5EE1A2751E944002E149F /* TabBar */,
 			);
 			path = Modules;
@@ -193,6 +203,23 @@
 				CAB5EE1D2751EA8F002E149F /* TabbarView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CAB5EE1F2751F07B002E149F /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE202751F091002E149F /* ChatsView.swift */,
+				CAB5EE222751F0A3002E149F /* ChatsViewModel.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		CAB5EE242751F0DF002E149F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE252751F0E8002E149F /* Chat.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +242,7 @@
 				CAB5EE0E2751E5F9002E149F /* NotificationBannerSwift */,
 				CAB5EE112751E621002E149F /* Alamofire */,
 				CAB5EE142751E630002E149F /* SnapKit */,
+				CAB5EE282751F617002E149F /* SDWebImageSwiftUI */,
 			);
 			productName = Investment;
 			productReference = CAB5EDCE2751E234002E149F /* Investment.app */;
@@ -248,6 +276,7 @@
 				CAB5EE0D2751E5F8002E149F /* XCRemoteSwiftPackageReference "NotificationBanner" */,
 				CAB5EE102751E621002E149F /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CAB5EE132751E630002E149F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CAB5EE272751F617002E149F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CAB5EDCF2751E234002E149F /* Products */;
 			projectDirPath = "";
@@ -293,12 +322,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB5EE232751F0A3002E149F /* ChatsViewModel.swift in Sources */,
 				CAB5EDE12751E2A6002E149F /* Color+Custom.swift in Sources */,
 				CAB5EE0C2751E58F002E149F /* BannerShowing.swift in Sources */,
 				CAB5EE1E2751EA8F002E149F /* TabbarView.swift in Sources */,
 				CAB5EE1C2751E954002E149F /* TabbarViewModel.swift in Sources */,
 				CAB5EDE32751E2B7002E149F /* Font+Custom.swift in Sources */,
+				CAB5EE262751F0E8002E149F /* Chat.swift in Sources */,
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
+				CAB5EE212751F091002E149F /* ChatsView.swift in Sources */,
 				CAB5EE182751E67C002E149F /* NetworkService.swift in Sources */,
 				CAB5EDD22751E234002E149F /* InvestmentApp.swift in Sources */,
 			);
@@ -533,6 +565,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		CAB5EE272751F617002E149F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -550,6 +590,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CAB5EE132751E630002E149F /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		CAB5EE282751F617002E149F /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAB5EE272751F617002E149F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -8,12 +8,15 @@ import SwiftUI
 struct TabbarView: View {
   @ObservedObject private var viewModel = TabbarViewModel()
   
+  // tabs
+  @ObservedObject private var chatsViewModel = ChatsViewModel()
+  
   var body: some View {
     ZStack(alignment: .bottom) {
       VStack {
         switch viewModel.currentTab {
         case .chats:
-          Text("Chats")
+          ChatsView(viewModel: chatsViewModel)
         case .buy:
           Text("Buy")
         case .news:
@@ -36,7 +39,7 @@ struct TabbarView: View {
               }
               Image(tab.rawValue)
             }
-          }.foregroundColor(viewModel.currentTab == tab ? .accent : .gray2)
+          }.foregroundColor(viewModel.currentTab == tab ? .accent : .neutral)
             .onTapGesture {
               viewModel.currentTab = tab
             }
