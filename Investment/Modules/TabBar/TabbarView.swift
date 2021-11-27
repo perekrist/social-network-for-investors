@@ -10,6 +10,7 @@ struct TabbarView: View {
   
   // tabs
   @ObservedObject private var chatsViewModel = ChatsViewModel()
+  @ObservedObject private var homeViewModel = HomeViewModel()
   
   var body: some View {
     ZStack(alignment: .bottom) {
@@ -24,7 +25,7 @@ struct TabbarView: View {
         case .bot:
           Text("Bot")
         case .home:
-          Text("Home")
+          HomeView(viewModel: homeViewModel)
         }
       }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color.background.edgesIgnoringSafeArea(.all))

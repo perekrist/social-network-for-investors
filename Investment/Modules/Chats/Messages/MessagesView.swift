@@ -10,7 +10,7 @@ struct MessagesView: View {
   @ObservedObject var viewModel: MessagesViewModel
   
   var body: some View {
-    ZStack {
+    ZStack(alignment: .top) {
       Color.accentLight.edgesIgnoringSafeArea(.top)
       VStack {
         ScrollView {
@@ -62,6 +62,10 @@ struct MessagesView: View {
           .frame(maxWidth: .infinity)
           .background(Color.accentLight.edgesIgnoringSafeArea(.bottom))
       }
+      Rectangle()
+        .frame(maxWidth: .infinity, maxHeight: 50, alignment: .top)
+        .foregroundColor(.accentLight)
+        .edgesIgnoringSafeArea(.top)
     }
     .navigationBarTitleDisplayMode(.inline)
     .toolbar {

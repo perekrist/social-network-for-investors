@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-class MessagesViewModel:ObservableObject {
+class MessagesViewModel: ObservableObject {
   @Published var text: String = ""
   @Published var chatName: String
   @Published var image: URL?
