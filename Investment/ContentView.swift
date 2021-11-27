@@ -10,7 +10,9 @@ struct ContentView: View {
     UINavigationBar.appearance().backgroundColor = UIColor.accentLight
   }
   
-  @State var isLoggedIn: Bool = UserDefaults.standard.value(forKey: "isLoggedIn") as? Bool ?? false
+  private var isLoggedIn: Bool {
+    return UserDefaultsService().getUserToken() != nil
+  }
   
   var body: some View {
     NavigationView {

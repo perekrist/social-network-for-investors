@@ -2,15 +2,13 @@
 //  ProfileDetailsView.swift
 //  Investment
 //
-//  Created by Daniil on 27.11.2021.
-//
 
 import UIKit
 import SnapKit
 
 class ProfileDetailsView: UIView {
   
-
+  
   
   let containerView = UIView()
   let imageView = UIImageView()
@@ -35,13 +33,13 @@ class ProfileDetailsView: UIView {
   override func willMove(toSuperview newSuperview: UIView?) {
     super.willMove(toSuperview: newSuperview)
     let labels = [fullNameLabel,
-                          onlineLabel,
-                          subscribersTitleLabel,
-                          subscribersAmountLabel,
-                          subscriptionsTitleLabel,
-                          subscriptionsAmountLabel,
-                          likesTitleLabel,
-                          likesAmountLabel]
+                  onlineLabel,
+                  subscribersTitleLabel,
+                  subscribersAmountLabel,
+                  subscriptionsTitleLabel,
+                  subscriptionsAmountLabel,
+                  likesTitleLabel,
+                  likesAmountLabel]
     
     containerView.layer.cornerRadius = 20
     containerView.layer.borderWidth = 3
