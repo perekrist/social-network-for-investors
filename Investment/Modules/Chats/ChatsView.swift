@@ -77,6 +77,9 @@ struct ChatsView: View {
               .shadow(color: hasMessages ? .shadow2.opacity(0.07): .clear,
                       radius: hasMessages ? 40 : 0,
                       x: 0, y: hasMessages ? 10 : 0)
+              .onTapGesture {
+                viewModel.selectChat(chat.id)
+              }
               .id(chat.id)
           }
         }
@@ -85,7 +88,11 @@ struct ChatsView: View {
     }.background(
       NavigationLink(isActive: $viewModel.shouldShowMessagesScreen,
                      destination: {
-                       Text("messages")
+                       if let messagesViewModel = viewModel.messagesViewModel {
+                         MessagesView(viewModel: messagesViewModel)
+                       } else {
+                         EmptyView()
+                       }
                      }, label: {
                        EmptyView()
                      })

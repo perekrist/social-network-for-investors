@@ -42,6 +42,11 @@
 		CAB5EE232751F0A3002E149F /* ChatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE222751F0A3002E149F /* ChatsViewModel.swift */; };
 		CAB5EE262751F0E8002E149F /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE252751F0E8002E149F /* Chat.swift */; };
 		CAB5EE292751F617002E149F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CAB5EE282751F617002E149F /* SDWebImageSwiftUI */; };
+		CAB5EE2C27520237002E149F /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE2B27520237002E149F /* MessagesView.swift */; };
+		CAB5EE2E2752024A002E149F /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE2D2752024A002E149F /* MessagesViewModel.swift */; };
+		CAB5EE302752027E002E149F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE2F2752027E002E149F /* Message.swift */; };
+		CAB5EE3227520E50002E149F /* Date+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3127520E4F002E149F /* Date+Custom.swift */; };
+		CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3327520E87002E149F /* MessageRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +83,11 @@
 		CAB5EE202751F091002E149F /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
 		CAB5EE222751F0A3002E149F /* ChatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewModel.swift; sourceTree = "<group>"; };
 		CAB5EE252751F0E8002E149F /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		CAB5EE2B27520237002E149F /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		CAB5EE2D2752024A002E149F /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+		CAB5EE2F2752027E002E149F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CAB5EE3127520E4F002E149F /* Date+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Custom.swift"; sourceTree = "<group>"; };
+		CAB5EE3327520E87002E149F /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +152,7 @@
 			children = (
 				CAB5EDE02751E2A6002E149F /* Color+Custom.swift */,
 				CAB5EDE22751E2B7002E149F /* Font+Custom.swift */,
+				CAB5EE3127520E4F002E149F /* Date+Custom.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 		CAB5EE1F2751F07B002E149F /* Chats */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5EE2A2752021A002E149F /* Messages */,
 				CAB5EE202751F091002E149F /* ChatsView.swift */,
 				CAB5EE222751F0A3002E149F /* ChatsViewModel.swift */,
 			);
@@ -218,8 +230,19 @@
 			isa = PBXGroup;
 			children = (
 				CAB5EE252751F0E8002E149F /* Chat.swift */,
+				CAB5EE2F2752027E002E149F /* Message.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CAB5EE2A2752021A002E149F /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE2B27520237002E149F /* MessagesView.swift */,
+				CAB5EE2D2752024A002E149F /* MessagesViewModel.swift */,
+				CAB5EE3327520E87002E149F /* MessageRow.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,9 +353,14 @@
 				CAB5EDE32751E2B7002E149F /* Font+Custom.swift in Sources */,
 				CAB5EE262751F0E8002E149F /* Chat.swift in Sources */,
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
+				CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */,
+				CAB5EE2E2752024A002E149F /* MessagesViewModel.swift in Sources */,
+				CAB5EE2C27520237002E149F /* MessagesView.swift in Sources */,
+				CAB5EE3227520E50002E149F /* Date+Custom.swift in Sources */,
 				CAB5EE212751F091002E149F /* ChatsView.swift in Sources */,
 				CAB5EE182751E67C002E149F /* NetworkService.swift in Sources */,
 				CAB5EDD22751E234002E149F /* InvestmentApp.swift in Sources */,
+				CAB5EE302752027E002E149F /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

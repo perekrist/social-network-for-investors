@@ -7,6 +7,7 @@ import SwiftUI
 
 extension UIColor {
   static let accent = UIColor(red: 0.255, green: 0.761, blue: 0.902, alpha: 1)
+  static let accentLight = UIColor(red: 0.875, green: 0.937, blue: 0.957, alpha: 1)
   static let dark = UIColor(red: 0.115, green: 0.085, blue: 0.09, alpha: 1)
   static let gray1 = UIColor(red: 0.482, green: 0.435, blue: 0.447, alpha: 1)
   static let gray2 = UIColor(red: 0.677, green: 0.643, blue: 0.649, alpha: 1)
@@ -19,6 +20,7 @@ extension UIColor {
 
 extension Color {
   static let accent = Color(UIColor.accent)
+  static let accentLight = Color(UIColor.accentLight)
   static let dark = Color(UIColor.dark)
   static let gray1 = Color(UIColor.gray1)
   static let gray2 = Color(UIColor.gray2)

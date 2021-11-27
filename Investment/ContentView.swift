@@ -6,7 +6,13 @@
 import SwiftUI
 
 struct ContentView: View {
+  init() {
+    UINavigationBar.appearance().backgroundColor = UIColor.accentLight
+  }
+  
   var body: some View {
-    TabbarView()
+    NavigationView {
+      TabbarView()
+    }.accentColor(.neutral)
   }
 }

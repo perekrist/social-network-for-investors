@@ -8,9 +8,16 @@ import SwiftUI
 class ChatsViewModel: ObservableObject {
   @Published var chats: [Chat] = []
   @Published var shouldShowMessagesScreen: Bool = false
+  @Published var messagesViewModel: MessagesViewModel?
   
   init() {
     getChats()
+  }
+  
+  func selectChat(_ id: String) {
+    guard let chat: Chat = chats.first(where: { $0.id == id }) else { return }
+    messagesViewModel = MessagesViewModel(chatName: chat.name, image: chat.url)
+    shouldShowMessagesScreen = true
   }
   
   private func getChats() {
