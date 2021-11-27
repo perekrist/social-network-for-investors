@@ -76,4 +76,13 @@ struct Comment: Codable, Identifiable {
     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
     return dateFormatter.date(from: createdAt) ?? Date()
   }
+  
+  init() {
+    id = 0
+    createdAt = ""
+    text = ""
+    blogPostID = nil
+    authorID = 0
+    threadComments = nil
+  }
 }

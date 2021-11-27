@@ -18,38 +18,27 @@ struct CommentsView: View {
           viewModel.showInstrument(id: id)
         }
         ForEach(viewModel.post.comments) { comment in
-          VStack(alignment: .leading) {
-            VStack(alignment: .leading) {
-              Text("\(comment.authorID)")
-                .font(.bold(15))
-                .foregroundColor(.dark)
-              Text(comment.text)
-                .font(.regular(20))
-                .foregroundColor(.dark)
-              Text(comment.date.fullFormatString())
-                .font(.regular(15))
-                .foregroundColor(.gray2)
-            }
-            
-            if let count = comment.threadComments?.count, count > 0 {
-              Button {
-                viewModel.showThread(id: comment.id)
-              } label: {
-                HStack(spacing: 10) {
-                  Image(systemName: "bubble.left")
-                  Text("Комментарии:  \(count)")
-                    .font(.regular(12))
-                }.foregroundColor(.gray2)
-              }
-            }
-          }.padding(.horizontal)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color.white)
-            .shadow(color: .shadow2.opacity(0.07),
-                    radius: 40, x: 0, y: 10)
-            .padding(.top, 1)
+          CommentView(comment: comment, canThread: true) { id in
+            viewModel.showThread(id: id)
+          }
         }
       }
     }.navigationBarTitleDisplayMode(.inline)
+      .background(
+        NavigationLink(isActive: $viewModel.isLinkActive,
+                       destination: {
+                         switch viewModel.destination {
+                         case .comments(let id):
+                           ThreadView(viewModel: ThreadViewModel(comment: viewModel.getComment(id: id)))
+                         case .instrument(let id):
+                           EmptyView()
+                         default:
+                           EmptyView()
+                         }
+                       }, label: {
+                         EmptyView()
+                       })
+          .hidden()
+      )
   }
 }
