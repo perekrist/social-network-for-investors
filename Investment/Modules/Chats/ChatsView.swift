@@ -48,7 +48,7 @@ struct ChatsView: View {
                 .resizable()
                 .frame(width: 60, height: 60)
                 .cornerRadius(20)
-                .shadow(color: .shadow.opacity(0.2), radius: 20, x: 0, y: 4)
+                .shadow(color: Color.shadow.opacity(0.2), radius: 20, x: 0, y: 4)
               VStack(alignment: .leading, spacing: 5) {
                 Text(chat.name)
                   .font(.medium(14))
@@ -74,7 +74,7 @@ struct ChatsView: View {
               .padding(.bottom, 8)
               .padding(.horizontal, 30)
               .background(hasMessages ? Color.white : Color.clear)
-              .shadow(color: hasMessages ? .shadow2.opacity(0.07): .clear,
+              .shadow(color: hasMessages ? Color.shadow2.opacity(0.07): .clear,
                       radius: hasMessages ? 40 : 0,
                       x: 0, y: hasMessages ? 10 : 0)
               .onTapGesture {
@@ -85,18 +85,6 @@ struct ChatsView: View {
         }
         Color.clear.frame(height: 100)
       }
-    }.background(
-      NavigationLink(isActive: $viewModel.shouldShowMessagesScreen,
-                     destination: {
-                       if let messagesViewModel = viewModel.messagesViewModel {
-                         MessagesView(viewModel: messagesViewModel)
-                       } else {
-                         EmptyView()
-                       }
-                     }, label: {
-                       EmptyView()
-                     })
-        .hidden()
-    )
+    }
   }
 }

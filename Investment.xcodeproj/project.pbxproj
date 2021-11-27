@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5439265275243B100B26005 /* LoginViewControllerXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5439263275243B000B26005 /* LoginViewControllerXIB.swift */; };
+		A5439266275243B100B26005 /* LoginViewControllerXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5439264275243B000B26005 /* LoginViewControllerXIB.xib */; };
+		A5439269275244C800B26005 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5439268275244C800B26005 /* Launch Screen.storyboard */; };
 		CAB5EDD22751E234002E149F /* InvestmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EDD12751E234002E149F /* InvestmentApp.swift */; };
 		CAB5EDD42751E234002E149F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EDD32751E234002E149F /* ContentView.swift */; };
 		CAB5EDD62751E23F002E149F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB5EDD52751E23F002E149F /* Assets.xcassets */; };
@@ -56,6 +59,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5439263275243B000B26005 /* LoginViewControllerXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerXIB.swift; sourceTree = "<group>"; };
+		A5439264275243B000B26005 /* LoginViewControllerXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewControllerXIB.xib; sourceTree = "<group>"; };
+		A5439268275244C800B26005 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CAB5EDCE2751E234002E149F /* Investment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Investment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB5EDD12751E234002E149F /* InvestmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentApp.swift; sourceTree = "<group>"; };
 		CAB5EDD32751E234002E149F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 		CAB5EDC52751E234002E149F = {
 			isa = PBXGroup;
 			children = (
+				A5439268275244C800B26005 /* Launch Screen.storyboard */,
 				CAB5EDD02751E234002E149F /* Investment */,
 				CAB5EDCF2751E234002E149F /* Products */,
 			);
@@ -275,6 +282,8 @@
 				CAB5EE442752354E002E149F /* LoginViewModel.swift */,
 				CAB5EE4627523565002E149F /* LoginView.swift */,
 				CAB5EE4827523587002E149F /* LoginViewController.swift */,
+				A5439263275243B000B26005 /* LoginViewControllerXIB.swift */,
+				A5439264275243B000B26005 /* LoginViewControllerXIB.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -355,7 +364,9 @@
 				CAB5EDFC2751E407002E149F /* Poppins-MediumItalic.ttf in Resources */,
 				CAB5EE012751E407002E149F /* Poppins-SemiBoldItalic.ttf in Resources */,
 				CAB5EDFA2751E407002E149F /* Poppins-Bold.ttf in Resources */,
+				A5439269275244C800B26005 /* Launch Screen.storyboard in Resources */,
 				CAB5EDF72751E407002E149F /* Poppins-BoldItalic.ttf in Resources */,
+				A5439266275243B100B26005 /* LoginViewControllerXIB.xib in Resources */,
 				CAB5EDFB2751E407002E149F /* Poppins-ExtraBold.ttf in Resources */,
 				CAB5EE002751E407002E149F /* Poppins-Italic.ttf in Resources */,
 				CAB5EE082751E407002E149F /* Poppins-Thin.ttf in Resources */,
@@ -392,6 +403,7 @@
 				CAB5EE4927523587002E149F /* LoginViewController.swift in Sources */,
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
 				CAB5EE3927522D46002E149F /* HomeView.swift in Sources */,
+				A5439265275243B100B26005 /* LoginViewControllerXIB.swift in Sources */,
 				CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */,
 				CAB5EE2E2752024A002E149F /* MessagesViewModel.swift in Sources */,
 				CAB5EE2C27520237002E149F /* MessagesView.swift in Sources */,
