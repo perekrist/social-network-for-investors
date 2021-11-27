@@ -95,13 +95,14 @@ class ProfileDetailsView: UIView {
     
     
     for label in labels {
-      label.font = UIFont(name: "Poppins-ExtraBold.ttf", size: 18)
-      label.textColor = .black
+      label.font = .bold(18)
+      label.textColor = .neutral
     }
     
     onlineLabel.font = .medium(18)
     onlineLabel.textColor = .gray
     
+    fullNameLabel.textColor = .black
     fullNameLabel.font = .medium(20)
     fullNameLabel.numberOfLines = 2
     
@@ -117,7 +118,7 @@ class ProfileDetailsView: UIView {
     subscribersTitleLabel.textAlignment = .center
     subscriptionsTitleLabel.textAlignment = .center
     
-    likesTitleLabel.font = UIFont(name: "Poppins-Bold.ttf", size: 18)
+    likesTitleLabel.font = UIFont.bold(18)
     
     addSubview(containerView)
     containerView.addSubview(onlineLabel)
@@ -177,20 +178,20 @@ class ProfileDetailsView: UIView {
     
     subscribersAmountLabel.snp.makeConstraints { make in
       make.top.equalTo(separatorView1)
-      make.leading.equalToSuperview()
-      make.trailing.equalTo(separatorView1)
+      make.leading.equalToSuperview().inset(6)
+      make.trailing.equalTo(separatorView1).inset(6)
     }
     
     subscriptionsAmountLabel.snp.makeConstraints { make in
       make.top.equalTo(separatorView1)
-      make.leading.equalTo(separatorView1)
-      make.trailing.equalTo(separatorView2)
+      make.leading.equalTo(separatorView1).inset(6)
+      make.trailing.equalTo(separatorView2).inset(6)
     }
     
     likesAmountLabel.snp.makeConstraints { make in
       make.top.equalTo(separatorView1)
-      make.leading.equalTo(separatorView2)
-      make.trailing.equalToSuperview()
+      make.leading.equalTo(separatorView2).inset(6)
+      make.trailing.equalToSuperview().inset(6)
     }
     
     subscribersTitleLabel.snp.makeConstraints { make in
