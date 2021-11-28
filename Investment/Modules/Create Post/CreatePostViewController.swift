@@ -57,9 +57,9 @@ class CreatePostViewController: UIViewController, UITextViewDelegate {
   
 
 
-    print(instruments)
+    print(finalText)
     
-    networkService.createPost(authorID: authorID, text: textView.text, instruments: instrumentsIDs) { result in
+    networkService.createPost(authorID: authorID, text: finalText as String, instruments: instrumentsIDs) { result in
       print(result)
       if result.id != nil {
         BannerShowing().showInfoBanner("Success!")
