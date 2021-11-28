@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A515F1CA27535097003E8E64 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515F1C827535097003E8E64 /* CreatePostViewController.swift */; };
+		A515F1CB27535097003E8E64 /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A515F1C927535097003E8E64 /* CreatePostViewController.xib */; };
 		A5290D402752C89100F351E2 /* UserUpperInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5290D3F2752C89100F351E2 /* UserUpperInfoView.swift */; };
 		A5290D432752C8E200F351E2 /* UserUpperInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5290D422752C8E200F351E2 /* UserUpperInfoView.xib */; };
 		A5439265275243B100B26005 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5439263275243B000B26005 /* RegisterViewController.swift */; };
@@ -82,6 +84,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A515F1C827535097003E8E64 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		A515F1C927535097003E8E64 /* CreatePostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatePostViewController.xib; sourceTree = "<group>"; };
 		A5290D3F2752C89100F351E2 /* UserUpperInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpperInfoView.swift; sourceTree = "<group>"; };
 		A5290D422752C8E200F351E2 /* UserUpperInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserUpperInfoView.xib; sourceTree = "<group>"; };
 		A5439263275243B000B26005 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +173,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A515F1C72753505B003E8E64 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A515F1C827535097003E8E64 /* CreatePostViewController.swift */,
+				A515F1C927535097003E8E64 /* CreatePostViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		A543926F275261B200B26005 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +222,7 @@
 		CAB5EDD02751E234002E149F /* Investment */ = {
 			isa = PBXGroup;
 			children = (
+				A515F1C72753505B003E8E64 /* ViewControllers */,
 				A543927C27527CEB00B26005 /* Views */,
 				CAB5EE242751F0DF002E149F /* Models */,
 				CAB5EE192751E93A002E149F /* Modules */,
@@ -492,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB5EDF82751E407002E149F /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				A515F1CB27535097003E8E64 /* CreatePostViewController.xib in Resources */,
 				CAB5EE052751E407002E149F /* Poppins-ExtraLight.ttf in Resources */,
 				CAB5EDFE2751E407002E149F /* Poppins-LightItalic.ttf in Resources */,
 				CAB5EDFC2751E407002E149F /* Poppins-MediumItalic.ttf in Resources */,
@@ -550,6 +565,7 @@
 				CAB5EE80275298F4002E149F /* AuthResult.swift in Sources */,
 				CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */,
 				CAB5EE2E2752024A002E149F /* MessagesViewModel.swift in Sources */,
+				A515F1CA27535097003E8E64 /* CreatePostViewController.swift in Sources */,
 				CAB5EE78275298B8002E149F /* CommentView.swift in Sources */,
 				CAB5EE2C27520237002E149F /* MessagesView.swift in Sources */,
 				CAB5EE932752AC54002E149F /* InstrumentsView.swift in Sources */,

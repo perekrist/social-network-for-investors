@@ -64,6 +64,21 @@ extension NetworkService {
       completion(posts)
     }
   }
+  
+  func createPost(authorID: Int, text: String, instruments: [Int], completion: @escaping ((CreatedPost) -> ())) {
+    
+    var safeInstruments: [Parameters] = [[:]]
+    for instrumentID in instruments {
+      safeInstruments.append(["id": instrumentID])
+    }
+    let params: Parameters = ["text" : text,
+                              "authorID" : authorID,
+                              "instruments" : safeInstruments]
+    baseRequest(url: "/blog_post", method: .post, params: params) { createdPost in
+      completion(createdPost)
+    }
+  }
+  
 }
 
 // MARK: - Auth
