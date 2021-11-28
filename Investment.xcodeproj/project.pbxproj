@@ -85,6 +85,9 @@
 		CAB5EE932752AC54002E149F /* InstrumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE922752AC54002E149F /* InstrumentsView.swift */; };
 		CAB5EE962752B66D002E149F /* InstrumentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE952752B66D002E149F /* InstrumentDetailsView.swift */; };
 		CAB5EE982752B68E002E149F /* InstrumentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */; };
+		CAB5EE9D27535E17002E149F /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE9B27535E16002E149F /* CreatePostViewController.swift */; };
+		CAB5EE9E27535E17002E149F /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB5EE9C27535E16002E149F /* CreatePostViewController.xib */; };
+		CAB5EEA127535F4C002E149F /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EEA027535F4C002E149F /* CreatePostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +165,9 @@
 		CAB5EE922752AC54002E149F /* InstrumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsView.swift; sourceTree = "<group>"; };
 		CAB5EE952752B66D002E149F /* InstrumentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentDetailsView.swift; sourceTree = "<group>"; };
 		CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentDetailsViewModel.swift; sourceTree = "<group>"; };
+		CAB5EE9B27535E16002E149F /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		CAB5EE9C27535E16002E149F /* CreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreatePostViewController.xib; sourceTree = "<group>"; };
+		CAB5EEA027535F4C002E149F /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		F10B126FE3AB09EB8E7D9262 /* Pods_Investment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Investment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE137B528A88B9E1546DD9C5 /* Pods-Investment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Investment.debug.xcconfig"; path = "Target Support Files/Pods-Investment/Pods-Investment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -419,10 +425,9 @@
 		CAB5EE6F275298B8002E149F /* News */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5EE9F27535F2F002E149F /* Views */,
 				CAB5EE70275298B8002E149F /* NewsView.swift */,
 				CAB5EE71275298B8002E149F /* NewsViewModel.swift */,
-				CAB5EE72275298B8002E149F /* PostView.swift */,
-				CAB5EE73275298B8002E149F /* InstrumentView.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -453,6 +458,25 @@
 				CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */,
 			);
 			path = "Instrument Details";
+			sourceTree = "<group>";
+		};
+		CAB5EE9A27535E16002E149F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE9B27535E16002E149F /* CreatePostViewController.swift */,
+				CAB5EE9C27535E16002E149F /* CreatePostViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CAB5EE9F27535F2F002E149F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5EE72275298B8002E149F /* PostView.swift */,
+				CAB5EE73275298B8002E149F /* InstrumentView.swift */,
+				CAB5EEA027535F4C002E149F /* CreatePostView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F844F18488050B907050D312 /* Pods */ = {
@@ -635,6 +659,7 @@
 				CAB5EE912752AC41002E149F /* InstrumentsViewModel.swift in Sources */,
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
 				CAB5EE3927522D46002E149F /* HomeView.swift in Sources */,
+				CAB5EEA127535F4C002E149F /* CreatePostView.swift in Sources */,
 				A5439265275243B100B26005 /* RegisterViewController.swift in Sources */,
 				CAB5EE7E275298C4002E149F /* Post.swift in Sources */,
 				CAB5EE80275298F4002E149F /* AuthResult.swift in Sources */,

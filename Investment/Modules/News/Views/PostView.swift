@@ -28,7 +28,7 @@ struct PostView: View {
         .foregroundColor(.gray2)
       textWithHashtags(post.text)
         .font(.medium(20))
-      ScrollView(.horizontal) {
+      ScrollView(.horizontal, showsIndicators: false) {
         HStack {
           ForEach(post.instruments ?? []) { instrument in
             InstrumentView(instrument: instrument) {

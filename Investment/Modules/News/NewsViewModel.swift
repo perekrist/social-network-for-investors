@@ -10,6 +10,12 @@ enum NewsDestination {
 }
 
 class NewsViewModel: ObservableObject {
+  @Published var shouldCreatePost: Bool = false {
+    didSet {
+      guard !shouldCreatePost else { return }
+      loadPosts()
+    }
+  }
   @Published var posts: [Post] = []
   @Published var destination: NewsDestination?
   @Published var instrument: Instrument = Instrument()

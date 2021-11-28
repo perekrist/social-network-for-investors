@@ -137,6 +137,7 @@ class ProfileDetailsView: UIView {
       make.edges.equalToSuperview()
     }
     
+    imageView.contentMode = .scaleAspectFill
     imageView.snp.makeConstraints {  make in
       make.leading.equalToSuperview().inset(30)
       make.top.equalToSuperview().inset(30)

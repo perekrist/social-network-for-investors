@@ -30,5 +30,14 @@ struct InstrumentDetailsView: View {
                      })
         .hidden()
     ).navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+          ToolbarItem(placement: .principal) {
+            Text("")
+              .font(.bold(17))
+              .kerning(1.04)
+              .foregroundColor(.dark)
+              .frame(maxWidth: .infinity, alignment: .leading)
+          }
+        }
   }
 }

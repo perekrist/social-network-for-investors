@@ -37,6 +37,7 @@ class CreatePostViewController: UIViewController, UITextViewDelegate {
   private let userDefaultsService = UserDefaultsService()
   
   private var instrumentsIDs: [Int] = []
+  var onDidCreatePost: (() -> ())?
   
   @IBAction func createPostPressed() {
     let authorID = userDefaultsService.getUserID() ?? 1
@@ -57,10 +58,7 @@ class CreatePostViewController: UIViewController, UITextViewDelegate {
       print(result)
       if result.id != nil {
         BannerShowing().showInfoBanner("Success!")
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-          self.navigationController?.popViewController(animated: true)
-        }
-        
+        self.onDidCreatePost?()
       }
     }
   }

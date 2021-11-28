@@ -11,6 +11,7 @@ struct Comment: Codable, Identifiable {
   let text: String
   let blogPostID: Int?
   let authorID: Int
+  let author: Author?
   var threadComments: [Comment]?
   
   var date: Date {
@@ -26,6 +27,7 @@ struct Comment: Codable, Identifiable {
     text = ""
     blogPostID = nil
     authorID = 0
+    author = nil
     threadComments = nil
   }
 }
