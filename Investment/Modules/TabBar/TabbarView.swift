@@ -51,6 +51,8 @@ struct TabbarView: View {
         .padding(.horizontal, 30)
         .background(Color.white)
         .cornerRadius(99)
+        .shadow(color: .dark.opacity(0.3), radius: 10, x: -5, y: -5)
+        .shadow(color: .accent.opacity(0.3), radius: 10, x: 5, y: 5)
         .padding(.horizontal, 40)
         .padding(.bottom, 30)
     }.navigationBarHidden(true)

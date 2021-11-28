@@ -7,11 +7,12 @@ import SwiftUI
 
 struct SendView: View {
   @Binding var text: String
+  @State var placeholder: String = "Введите сообщение"
   @State var onSendMessage: (() -> ())
   
   var body: some View {
     HStack(spacing: 20) {
-      TextField("Введите сообщение", text: $text)
+      TextField(placeholder, text: $text)
         .padding()
         .background(
           RoundedRectangle(cornerRadius: 10)

@@ -17,9 +17,18 @@ struct ThreadView: View {
           CommentView(comment: comment, canThread: false)
         }
       }
-      SendView(text: $viewModel.text) {
+      SendView(text: $viewModel.text, placeholder: "Введите комментарий") {
         viewModel.addComment()
       }
-    }.navigationTitle("Вложенные комментарии")
+    }.navigationBarTitleDisplayMode(.inline)
+      .toolbar {
+        ToolbarItem(placement: .principal) {
+          Text("Вложенные комментарии")
+            .font(.bold(17))
+            .kerning(1.04)
+            .foregroundColor(.dark)
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+      }
   }
 }

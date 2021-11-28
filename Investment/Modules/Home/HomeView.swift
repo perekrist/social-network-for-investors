@@ -13,7 +13,7 @@ struct HomeView: View {
       ScrollView(.vertical) {
         HomeProfileView(author: viewModel.author)
           .padding()
-          .frame(height: 240)
+          .frame(height: 210)
         ForEach(viewModel.author.blogPosts ?? []) { post in
           PostView(post: post, needShowComments: false, showComments: { id in
             viewModel.showPost(id: id)
@@ -21,8 +21,8 @@ struct HomeView: View {
             viewModel.showInstrument(id: id)
           })
         }
+        Color.clear.frame(height: 100)
       }
-      Color.clear.frame(height: 100)
     }.background(
       NavigationLink(isActive: $viewModel.isLinkActive,
                      destination: {

@@ -24,11 +24,19 @@ struct CommentsView: View {
         }
         Color.clear.frame(height: 100)
       }
-      SendView(text: $viewModel.text) {
+      SendView(text: $viewModel.text, placeholder: "Введите комментарий") {
         viewModel.addComment()
       }
     }.navigationBarTitleDisplayMode(.inline)
-      .navigationTitle("Комментарии")
+      .toolbar {
+        ToolbarItem(placement: .principal) {
+          Text("Комментарии")
+            .font(.bold(17))
+            .kerning(1.04)
+            .foregroundColor(.dark)
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+      }
       .background(
         NavigationLink(isActive: $viewModel.isLinkActive,
                        destination: {
