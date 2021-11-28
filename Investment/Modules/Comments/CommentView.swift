@@ -13,7 +13,7 @@ struct CommentView: View {
   var body: some View {
     VStack(alignment: .leading) {
       VStack(alignment: .leading) {
-        Text("\(comment.authorID)")
+        Text(comment.author?.name ?? "\(comment.authorID)")
           .font(.bold(15))
           .foregroundColor(.dark)
         Text(comment.text)
