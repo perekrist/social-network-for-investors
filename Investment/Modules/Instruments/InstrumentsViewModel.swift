@@ -6,7 +6,7 @@
 import SwiftUI
 
 enum InstrumentsDestination {
-  case details(id: Int), post(id: Int)
+  case details, post
 }
 
 class InstrumentsViewModel: ObservableObject {
@@ -23,11 +23,9 @@ class InstrumentsViewModel: ObservableObject {
   }
   @Published var instruments: [Instrument] = []
   @Published var allInstruments: [Instrument] = []
-  @Published var destination: InstrumentsDestination? {
-    didSet {
-      self.isLinkActive = true
-    }
-  }
+  @Published var destination: InstrumentsDestination?
+  @Published var post: Post = Post()
+  @Published var instrument: Instrument = Instrument()
   @Published var isLinkActive: Bool = false
   private let networkService = NetworkService()
   
@@ -36,19 +34,19 @@ class InstrumentsViewModel: ObservableObject {
   }
   
   func showDetails(id: Int) {
-    self.destination = .details(id: id)
-  }
-  
-  func getPost(id: Int) -> Post {
-    return instruments.flatMap({ $0.blogPosts ?? [] }).first(where: { $0.id == id }) ?? Post()
-  }
-  
-  func getInstrument(id: Int) -> Instrument {
-    return instruments.first(where: { $0.id == id }) ?? Instrument()
+    self.destination = .details
+    networkService.getInstrument(id: id) { instrument in
+      self.instrument = instrument
+      self.isLinkActive = true
+    }
   }
   
   func showPost(id: Int) {
-    self.destination = .post(id: id)
+    self.destination = .post
+    networkService.getPost(id: id) { post in
+      self.post = post
+      self.isLinkActive = true
+    }
   }
   
   private func loadInstruments() {

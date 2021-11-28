@@ -32,7 +32,13 @@ extension NetworkService {
 
 // MARK: - Comments
 extension NetworkService {
-  func sendThreadComment(text: String, authorID: Int = 1, commentID: Int, completion: @escaping ((Comment) -> ())) {
+  func getComment(id: Int, completion: @escaping (Comment) -> ()) {
+    baseRequest(url: "/comment/\(id)", method: .get) { comment in
+      completion(comment)
+    }
+  }
+  
+  func sendThreadComment(text: String, authorID: Int, commentID: Int, completion: @escaping ((Comment) -> ())) {
     let params: Parameters = ["text": text,
                               "authorID": authorID,
                               "commentID": commentID]
@@ -41,7 +47,7 @@ extension NetworkService {
     }
   }
   
-  func sendComment(text: String, authorID: Int = 1, blogPostID: Int, completion: @escaping ((Comment) -> ())) {
+  func sendComment(text: String, authorID: Int, blogPostID: Int, completion: @escaping ((Comment) -> ())) {
     let params: Parameters = ["text": text,
                               "authorID": authorID,
                               "blogPostID": blogPostID]

@@ -6,13 +6,14 @@
 import SwiftUI
 
 enum NewsDestination {
-  case comments(id: Int), instrument(id: Int)
+  case comments, instrument
 }
 
 class NewsViewModel: ObservableObject {
   @Published var posts: [Post] = []
   @Published var destination: NewsDestination?
   @Published var instrument: Instrument = Instrument()
+  @Published var post: Post = Post()
   @Published var isLinkActive: Bool = false
   
   private let networkService = NetworkService()
@@ -26,12 +27,15 @@ class NewsViewModel: ObservableObject {
   }
   
   func showComments(id: Int) {
-    self.destination = .comments(id: id)
-    self.isLinkActive = true
+    self.destination = .comments
+    networkService.getPost(id: id) { post in
+      self.post = post
+      self.isLinkActive = true
+    }
   }
   
   func showInstrument(id: Int) {
-    self.destination = .instrument(id: id)
+    self.destination = .instrument
     networkService.getInstrument(id: id) { instrument in
       self.instrument = instrument
       self.isLinkActive = true
