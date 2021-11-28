@@ -23,8 +23,8 @@ struct NewsView: View {
       NavigationLink(isActive: $viewModel.isLinkActive,
                      destination: {
                        switch viewModel.destination {
-                       case .comments(let id):
-                         CommentsView(viewModel: CommentsViewModel(post: viewModel.getPost(id: id)))
+                       case .comments:
+                         CommentsView(viewModel: CommentsViewModel(post: viewModel.post))
                        case .instrument:
                          InstrumentDetailsView(viewModel: InstrumentDetailsViewModel(instrument: viewModel.instrument))
                        default:

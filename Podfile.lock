@@ -1,0 +1,16 @@
+PODS:
+  - SZMentionsSwift (2.1.3)
+
+DEPENDENCIES:
+  - SZMentionsSwift
+
+SPEC REPOS:
+  trunk:
+    - SZMentionsSwift
+
+SPEC CHECKSUMS:
+  SZMentionsSwift: 1d9d4bf8bfc234c8d8bd79f480947663a096200c
+
+PODFILE CHECKSUM: 58bbdc94da211a0734c214800251680898251144
+
+COCOAPODS: 1.10.1

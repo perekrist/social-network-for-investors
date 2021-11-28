@@ -33,10 +33,10 @@ struct CommentsView: View {
         NavigationLink(isActive: $viewModel.isLinkActive,
                        destination: {
                          switch viewModel.destination {
-                         case .comments(let id):
-                           ThreadView(viewModel: ThreadViewModel(comment: viewModel.getComment(id: id)))
-                         case .instrument(let id):
-                           EmptyView()
+                         case .comments:
+                           ThreadView(viewModel: ThreadViewModel(comment: viewModel.comment))
+                         case .instrument:
+                           InstrumentDetailsView(viewModel: InstrumentDetailsViewModel(instrument: viewModel.instrument))
                          default:
                            EmptyView()
                          }
