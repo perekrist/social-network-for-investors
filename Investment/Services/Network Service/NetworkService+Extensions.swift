@@ -6,6 +6,17 @@
 import Foundation
 import Alamofire
 
+// MARK: - Bot
+extension NetworkService {
+  func sendToBot(text: String, completion: @escaping (BotResponse) -> ()) {
+    let params: Parameters = ["text": text]
+    baseRequest(isAuth: true, url: "/bot/balaboba", method: .get, params: params, encoding: URLEncoding.default) { response in
+      completion(response)
+    }
+  }
+}
+
+
 // MARK: - Profile
 extension NetworkService {
   func getAuthor(id: Int, completion: @escaping (Author) -> ()) {

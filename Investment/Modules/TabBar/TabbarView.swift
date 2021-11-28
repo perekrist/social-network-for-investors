@@ -12,6 +12,7 @@ struct TabbarView: View {
   @ObservedObject private var chatsViewModel = ChatsViewModel()
   @ObservedObject private var instrumentsViewModel = InstrumentsViewModel()
   @ObservedObject private var newsViewModel = NewsViewModel()
+  @ObservedObject private var botViewModel = BotViewModel()
   @ObservedObject private var homeViewModel = HomeViewModel()
   
   var body: some View {
@@ -25,7 +26,7 @@ struct TabbarView: View {
         case .news:
           NewsView(viewModel: newsViewModel)
         case .bot:
-          Text("Bot")
+          BotView(viewModel: botViewModel)
         case .home:
           HomeView(viewModel: homeViewModel)
         }

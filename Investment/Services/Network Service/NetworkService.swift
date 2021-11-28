@@ -11,10 +11,11 @@ class NetworkService {
   static let baseURL = NetworkService.baseAuthURL + "/v1"
   
   func baseRequest<T: Decodable>(isAuth: Bool = false, url: String, method: HTTPMethod, params: Parameters? = nil,
+                                 encoding: ParameterEncoding = JSONEncoding.default,
                                  completion: @escaping ((T) -> Void)) {
     let baseURL = isAuth ? NetworkService.baseAuthURL : NetworkService.baseURL
     AF.request(baseURL + url, method: method, parameters: params,
-               encoding: JSONEncoding.default).responseData { response in
+               encoding:encoding).responseData { response in
       print(response.request)
       
       switch response.result {
