@@ -29,10 +29,12 @@ struct PostView: View {
       textWithHashtags(post.text)
         .font(.medium(20))
       ScrollView(.horizontal) {
-        ForEach(post.instruments ?? []) { instrument in
-          InstrumentView(instrument: instrument) {
-            showInstrument?(instrument.id)
-          }.frame(maxWidth: UIScreen.main.bounds.width / 2, minHeight: 150)
+        HStack {
+          ForEach(post.instruments ?? []) { instrument in
+            InstrumentView(instrument: instrument) {
+              showInstrument?(instrument.id)
+            }.frame(maxWidth: UIScreen.main.bounds.width / 2, minHeight: 150)
+          }
         }
       }
       if needShowComments {
