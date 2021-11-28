@@ -41,6 +41,9 @@ class CommentsViewModel: ObservableObject {
     networkService.sendComment(text: text, authorID: authorID,
                                blogPostID: post.id) { comment in
       self.text = ""
+      if self.post.comments == nil {
+        self.post.comments = []
+      }
       self.post.comments?.append(comment)
     }
   }
