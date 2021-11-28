@@ -10,18 +10,20 @@ struct ContentView: View {
     UINavigationBar.appearance().backgroundColor = UIColor.accentLight
   }
   
-  private var isLoggedIn: Bool {
-    return UserDefaultsService().getUserToken() != nil
-  }
+  @State private var isLoggedIn: Bool = false
+  private let userDefaultsService = UserDefaultsService()
   
   var body: some View {
     NavigationView {
       if isLoggedIn {
         TabbarView()
       } else {
-        RegisterView()
+        RegisterView(isLoggedIn: $isLoggedIn)
           .navigationBarHidden(true)
       }
-    }.accentColor(.neutral)
+    }.onAppear {
+      self.isLoggedIn = userDefaultsService.getUserToken() != nil
+    }
+    .accentColor(.neutral)
   }
 }

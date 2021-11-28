@@ -11,6 +11,7 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var emailField: UITextField!
   @IBOutlet weak var passwordField: UITextField!
   
+  var onDidAuthorize: (() -> ())?
   private var textFields: [UITextField] = []
   
   @IBAction func noAccountButtonPressed() {
@@ -29,11 +30,15 @@ class LoginViewController: UIViewController {
       }
       print(loginResult)
       UserDefaultsService().setUserToken(token)
+      self.onDidAuthorize?()
     }
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    emailField.text = "demo@example.ru"
+    passwordField.text = "demo"
+    
     textFields = [emailField,
                   passwordField]
     
@@ -44,7 +49,6 @@ class LoginViewController: UIViewController {
     
     passwordField.returnKeyType = .done
     
-    
     // delete
     let view = ProfileDetailsView()
     self.view.addSubview(view)
@@ -53,7 +57,6 @@ class LoginViewController: UIViewController {
       make.centerY.equalToSuperview()
     }
     view.setup(name: "Daniel", surname: "Krivelev", isOnline: false, followers: 190, following: 202, likes: 158, isEditable: false)
-    
   }
   
 }
