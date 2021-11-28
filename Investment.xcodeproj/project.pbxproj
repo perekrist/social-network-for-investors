@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		A515F1CA27535097003E8E64 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		A515F1CB27535097003E8E64 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		A515F1E527535F99003E8E64 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515F1E327535F99003E8E64 /* CreatePostViewController.swift */; };
-		A515F1E627535F99003E8E64 /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A515F1E427535F99003E8E64 /* CreatePostViewController.xib */; };
 		A515F1E92753621E003E8E64 /* CustomAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515F1E82753621E003E8E64 /* CustomAccessoryView.swift */; };
 		A5290D402752C89100F351E2 /* UserUpperInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5290D3F2752C89100F351E2 /* UserUpperInfoView.swift */; };
 		A5290D432752C8E200F351E2 /* UserUpperInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5290D422752C8E200F351E2 /* UserUpperInfoView.xib */; };
+		A52AC90B27537B5B006E416D /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AC90927537B5B006E416D /* CreatePostViewController.swift */; };
+		A52AC90C27537B5B006E416D /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52AC90A27537B5B006E416D /* CreatePostViewController.xib */; };
 		A5439265275243B100B26005 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5439263275243B000B26005 /* RegisterViewController.swift */; };
 		A5439266275243B100B26005 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5439264275243B000B26005 /* RegisterViewController.xib */; };
 		A5439269275244C800B26005 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5439268275244C800B26005 /* Launch Screen.storyboard */; };
@@ -85,18 +85,16 @@
 		CAB5EE932752AC54002E149F /* InstrumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE922752AC54002E149F /* InstrumentsView.swift */; };
 		CAB5EE962752B66D002E149F /* InstrumentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE952752B66D002E149F /* InstrumentDetailsView.swift */; };
 		CAB5EE982752B68E002E149F /* InstrumentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */; };
-		CAB5EE9D27535E17002E149F /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE9B27535E16002E149F /* CreatePostViewController.swift */; };
-		CAB5EE9E27535E17002E149F /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB5EE9C27535E16002E149F /* CreatePostViewController.xib */; };
 		CAB5EEA127535F4C002E149F /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EEA027535F4C002E149F /* CreatePostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B17DD98BD33CDB2F3C362EE /* Pods-Investment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Investment.release.xcconfig"; path = "Target Support Files/Pods-Investment/Pods-Investment.release.xcconfig"; sourceTree = "<group>"; };
-		A515F1E327535F99003E8E64 /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePostViewController.swift; path = Investment/ViewControllers/CreatePostViewController.swift; sourceTree = SOURCE_ROOT; };
-		A515F1E427535F99003E8E64 /* CreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreatePostViewController.xib; path = Investment/ViewControllers/CreatePostViewController.xib; sourceTree = SOURCE_ROOT; };
 		A515F1E82753621E003E8E64 /* CustomAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAccessoryView.swift; sourceTree = "<group>"; };
 		A5290D3F2752C89100F351E2 /* UserUpperInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpperInfoView.swift; sourceTree = "<group>"; };
 		A5290D422752C8E200F351E2 /* UserUpperInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserUpperInfoView.xib; sourceTree = "<group>"; };
+		A52AC90927537B5B006E416D /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePostViewController.swift; path = Investment/CreatePostViewController.swift; sourceTree = SOURCE_ROOT; };
+		A52AC90A27537B5B006E416D /* CreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreatePostViewController.xib; path = Investment/CreatePostViewController.xib; sourceTree = SOURCE_ROOT; };
 		A5439263275243B000B26005 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A5439264275243B000B26005 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		A5439268275244C800B26005 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -165,8 +163,6 @@
 		CAB5EE922752AC54002E149F /* InstrumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsView.swift; sourceTree = "<group>"; };
 		CAB5EE952752B66D002E149F /* InstrumentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentDetailsView.swift; sourceTree = "<group>"; };
 		CAB5EE972752B68E002E149F /* InstrumentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentDetailsViewModel.swift; sourceTree = "<group>"; };
-		CAB5EE9B27535E16002E149F /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
-		CAB5EE9C27535E16002E149F /* CreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreatePostViewController.xib; sourceTree = "<group>"; };
 		CAB5EEA027535F4C002E149F /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		F10B126FE3AB09EB8E7D9262 /* Pods_Investment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Investment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE137B528A88B9E1546DD9C5 /* Pods-Investment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Investment.debug.xcconfig"; path = "Target Support Files/Pods-Investment/Pods-Investment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,13 +192,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A515F1E227535F86003E8E64 /* New Group */ = {
+		A52AC90827537B4A006E416D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A515F1E327535F99003E8E64 /* CreatePostViewController.swift */,
-				A515F1E427535F99003E8E64 /* CreatePostViewController.xib */,
+				A52AC90927537B5B006E416D /* CreatePostViewController.swift */,
+				A52AC90A27537B5B006E416D /* CreatePostViewController.xib */,
 			);
-			path = "New Group";
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		A543926F275261B200B26005 /* Login */ = {
@@ -247,8 +243,8 @@
 		CAB5EDD02751E234002E149F /* Investment */ = {
 			isa = PBXGroup;
 			children = (
+				A52AC90827537B4A006E416D /* View Controllers */,
 				A515F1E82753621E003E8E64 /* CustomAccessoryView.swift */,
-				A515F1E227535F86003E8E64 /* New Group */,
 				A543927C27527CEB00B26005 /* Views */,
 				CAB5EE242751F0DF002E149F /* Models */,
 				CAB5EE192751E93A002E149F /* Modules */,
@@ -460,15 +456,6 @@
 			path = "Instrument Details";
 			sourceTree = "<group>";
 		};
-		CAB5EE9A27535E16002E149F /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				CAB5EE9B27535E16002E149F /* CreatePostViewController.swift */,
-				CAB5EE9C27535E16002E149F /* CreatePostViewController.xib */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		CAB5EE9F27535F2F002E149F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -570,8 +557,8 @@
 				A5290D432752C8E200F351E2 /* UserUpperInfoView.xib in Resources */,
 				A5439269275244C800B26005 /* Launch Screen.storyboard in Resources */,
 				CAB5EDF72751E407002E149F /* Poppins-BoldItalic.ttf in Resources */,
-				A515F1E627535F99003E8E64 /* CreatePostViewController.xib in Resources */,
 				A5439266275243B100B26005 /* RegisterViewController.xib in Resources */,
+				A52AC90C27537B5B006E416D /* CreatePostViewController.xib in Resources */,
 				CAB5EDFB2751E407002E149F /* Poppins-ExtraBold.ttf in Resources */,
 				CAB5EE002751E407002E149F /* Poppins-Italic.ttf in Resources */,
 				CAB5EE082751E407002E149F /* Poppins-Thin.ttf in Resources */,
@@ -646,7 +633,6 @@
 				CAB5EDE12751E2A6002E149F /* Color+Custom.swift in Sources */,
 				CAB5EE7C275298B8002E149F /* InstrumentView.swift in Sources */,
 				CAB5EE77275298B8002E149F /* ThreadViewModel.swift in Sources */,
-				A515F1E527535F99003E8E64 /* CreatePostViewController.swift in Sources */,
 				CAB5EE0C2751E58F002E149F /* BannerShowing.swift in Sources */,
 				CAB5EE1E2751EA8F002E149F /* TabbarView.swift in Sources */,
 				CAB5EE79275298B8002E149F /* NewsView.swift in Sources */,
@@ -660,6 +646,7 @@
 				CAB5EDD42751E234002E149F /* ContentView.swift in Sources */,
 				CAB5EE3927522D46002E149F /* HomeView.swift in Sources */,
 				CAB5EEA127535F4C002E149F /* CreatePostView.swift in Sources */,
+				A52AC90B27537B5B006E416D /* CreatePostViewController.swift in Sources */,
 				A5439265275243B100B26005 /* RegisterViewController.swift in Sources */,
 				CAB5EE7E275298C4002E149F /* Post.swift in Sources */,
 				CAB5EE80275298F4002E149F /* AuthResult.swift in Sources */,

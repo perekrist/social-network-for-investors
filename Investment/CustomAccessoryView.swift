@@ -13,6 +13,7 @@ struct InstrumentForMention: CreateMention {
   var id: Int
 }
 
+
 class CustomMentionsTableViewDataManager: NSObject {
   private let cellIdentifier = "Cell"
   private let listener: MentionListener
