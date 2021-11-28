@@ -49,15 +49,6 @@ class LoginViewController: UIViewController {
     }
     
     passwordField.returnKeyType = .done
-    
-    // delete
-    let view = ProfileDetailsView()
-    self.view.addSubview(view)
-    view.snp.makeConstraints { make in
-      make.leading.trailing.equalToSuperview().inset(20)
-      make.centerY.equalToSuperview()
-    }
-    view.setup(name: "Daniel", surname: "Krivelev", isOnline: false, followers: 190, following: 202, likes: 158, isEditable: false)
   }
   
 }
