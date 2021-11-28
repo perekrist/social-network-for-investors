@@ -93,8 +93,8 @@
 		A515F1E82753621E003E8E64 /* CustomAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAccessoryView.swift; sourceTree = "<group>"; };
 		A5290D3F2752C89100F351E2 /* UserUpperInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpperInfoView.swift; sourceTree = "<group>"; };
 		A5290D422752C8E200F351E2 /* UserUpperInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserUpperInfoView.xib; sourceTree = "<group>"; };
-		A52AC90927537B5B006E416D /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePostViewController.swift; path = Investment/CreatePostViewController.swift; sourceTree = SOURCE_ROOT; };
-		A52AC90A27537B5B006E416D /* CreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreatePostViewController.xib; path = Investment/CreatePostViewController.xib; sourceTree = SOURCE_ROOT; };
+		A52AC90927537B5B006E416D /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePostViewController.swift; path = "Investment/Modules/Create Post/CreatePostViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A52AC90A27537B5B006E416D /* CreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreatePostViewController.xib; path = "Investment/Modules/Create Post/CreatePostViewController.xib"; sourceTree = SOURCE_ROOT; };
 		A5439263275243B000B26005 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A5439264275243B000B26005 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		A5439268275244C800B26005 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -192,13 +192,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A52AC90827537B4A006E416D /* View Controllers */ = {
+		A52AC90F275380D0006E416D /* Create Post */ = {
 			isa = PBXGroup;
 			children = (
-				A52AC90927537B5B006E416D /* CreatePostViewController.swift */,
+				A515F1E82753621E003E8E64 /* CustomAccessoryView.swift */,
 				A52AC90A27537B5B006E416D /* CreatePostViewController.xib */,
+				A52AC90927537B5B006E416D /* CreatePostViewController.swift */,
 			);
-			path = "View Controllers";
+			path = "Create Post";
 			sourceTree = "<group>";
 		};
 		A543926F275261B200B26005 /* Login */ = {
@@ -243,8 +244,6 @@
 		CAB5EDD02751E234002E149F /* Investment */ = {
 			isa = PBXGroup;
 			children = (
-				A52AC90827537B4A006E416D /* View Controllers */,
-				A515F1E82753621E003E8E64 /* CustomAccessoryView.swift */,
 				A543927C27527CEB00B26005 /* Views */,
 				CAB5EE242751F0DF002E149F /* Models */,
 				CAB5EE192751E93A002E149F /* Modules */,
@@ -324,6 +323,7 @@
 		CAB5EE192751E93A002E149F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A52AC90F275380D0006E416D /* Create Post */,
 				CAB5EE8F2752AC29002E149F /* Instruments */,
 				CAB5EE68275298B8002E149F /* Comments */,
 				CAB5EE6F275298B8002E149F /* News */,
