@@ -26,4 +26,9 @@ class UserDefaultsService {
   func setUserID(_ id: Int) {
     userDefaults.setValue(id, forKey: idKey)
   }
+  
+  func clearAll() {
+    userDefaults.setValue(nil, forKey: tokenKey)
+    userDefaults.setValue(nil, forKey: idKey)
+  }
 }

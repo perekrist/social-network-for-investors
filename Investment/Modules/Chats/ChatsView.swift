@@ -28,7 +28,7 @@ struct ChatsView: View {
           }
           
           Button {
-            // add
+            UserDefaultsService().clearAll()
           } label: {
             Image(systemName: "plus")
               .resizable()
