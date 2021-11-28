@@ -6,6 +6,8 @@
 import SwiftUI
 
 extension UIColor {
+  static let isOfflineColor = UIColor(red: 0.68, green: 0.64, blue: 0.65, alpha: 1)
+  static let isOnlineColor = UIColor(red: 0.25, green: 0.76, blue: 0.9, alpha: 1)
   static let separatorColor = UIColor(red: 0.925, green: 0.929, blue: 0.957, alpha: 1)
   static let accent = UIColor(red: 0.255, green: 0.761, blue: 0.902, alpha: 1)
   static let accentLight = UIColor(red: 0.875, green: 0.937, blue: 0.957, alpha: 1)
