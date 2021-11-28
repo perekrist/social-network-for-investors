@@ -12,6 +12,8 @@ class RegisterViewController: UIViewController {
   @IBOutlet weak var emailField: UITextField!
   @IBOutlet weak var nicknameField: UITextField!
   
+  var onDidAuthorize: (() -> ())?
+  
   private var textFields: [UITextField] = []
   private let networkService = NetworkService()
   
@@ -31,10 +33,19 @@ class RegisterViewController: UIViewController {
         return
       }
       UserDefaultsService().setUserToken(token)
+      self.onDidAuthorize?()
+      self.navigationController?.popViewController(animated: true)
+      self.dismiss(animated: true, completion: nil)
     }
   }
   @IBAction func loginPressed() {
-    navigationController?.pushViewController(LoginViewController(nibName: "LoginViewController", bundle: nil), animated: true)
+    let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+    loginViewController.onDidAuthorize = { [weak self] in
+      self?.onDidAuthorize?()
+      self?.navigationController?.popViewController(animated: true)
+    }
+    navigationController?.pushViewController(loginViewController, animated: true)
+    dismiss(animated: true, completion: nil)
   }
   
   override func viewDidLoad() {
