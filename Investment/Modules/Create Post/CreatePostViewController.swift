@@ -45,19 +45,21 @@ class CreatePostViewController: UIViewController, UITextViewDelegate {
       authorID = 1
     }
     var instruments: [Int] = []
+    var finalText = NSString(string: textView.text ?? "")
     
     if let safeArray = myInputAccessoryView.mentionListenerr?.mentions {
       for mention in safeArray {
         guard let temp = mention.object as? InstrumentForMention else { continue }
         instruments.append(temp.id)
+        finalText = finalText.replacingOccurrences(of: temp.name, with:"#" + temp.name) as NSString
       }
     }
   
 
 
-    print(instruments)
+    print(finalText)
     
-    networkService.createPost(authorID: authorID, text: textView.text, instruments: instrumentsIDs) { result in
+    networkService.createPost(authorID: authorID, text: finalText as String, instruments: instrumentsIDs) { result in
       print(result)
       if result.id != nil {
         BannerShowing().showInfoBanner("Success!")
