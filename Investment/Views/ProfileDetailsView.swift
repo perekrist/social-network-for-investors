@@ -29,7 +29,6 @@ class ProfileDetailsView: UIView {
   
   func setup(avatar: UIImage? = nil, name: String, surname: String, isOnline: Bool, followers: Int, following: Int, likes: Int, isEditable: Bool) {
     
-    
     fullNameLabel.text = name + " " + surname
     subscribersAmountLabel.text = String(followers)
     subscriptionsAmountLabel.text = String(following)
@@ -90,8 +89,8 @@ class ProfileDetailsView: UIView {
     imageView.image = UIImage(named: "AvatarPlaceholder")
     
     subscribersTitleLabel.text = "Подписчики"
-    subscriptionsTitleLabel.text = "Подписки"
-    likesTitleLabel.text = "Реакции"
+    subscriptionsTitleLabel.text = "Посты"
+    likesTitleLabel.text = "Коммент."
     
     
     for label in labels {

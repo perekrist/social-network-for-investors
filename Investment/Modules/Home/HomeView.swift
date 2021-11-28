@@ -10,9 +10,35 @@ struct HomeView: View {
   
   var body: some View {
     VStack {
-      HomeInfoView()
-      HomeProfileView(author: viewModel.author)
-    }
+      ScrollView(.vertical) {
+        HomeProfileView(author: viewModel.author)
+          .padding()
+          .frame(height: 240)
+        ForEach(viewModel.author.blogPosts ?? []) { post in
+          PostView(post: post, needShowComments: false, showComments: { id in
+            viewModel.showPost(id: id)
+          }, showInstrument: { id in
+            viewModel.showInstrument(id: id)
+          })
+        }
+      }
+      Color.clear.frame(height: 100)
+    }.background(
+      NavigationLink(isActive: $viewModel.isLinkActive,
+                     destination: {
+                       switch viewModel.destination {
+                       case .postDetails:
+                         CommentsView(viewModel: CommentsViewModel(post: viewModel.post))
+                       case .instrument:
+                         InstrumentDetailsView(viewModel: InstrumentDetailsViewModel(instrument: viewModel.instrument))
+                       default:
+                         EmptyView()
+                       }
+                     }, label: {
+                       EmptyView()
+                     })
+        .hidden()
+    )
   }
 }
 
@@ -34,10 +60,10 @@ struct HomeProfileView: UIViewRepresentable {
     view.setup(avatar: nil,
                name: author.name,
                surname: author.surname,
-               isOnline: false,
+               isOnline: true,
                followers: 0,
-               following: 0,
-               likes: 0,
+               following: author.postsCount,
+               likes: author.commentsCount,
                isEditable: false)
     return view
   }

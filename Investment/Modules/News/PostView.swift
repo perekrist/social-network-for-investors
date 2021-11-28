@@ -2,25 +2,25 @@
 //  PostView.swift
 //  Investment
 //
-//  Created by Кристина Перегудова on 27.11.2021.
-//
 
 import SwiftUI
 
 struct PostView: View {
   @State var post: Post
   var needShowComments: Bool = true
-  @State var showComments: ((Int) -> ())
+  @State var showComments: ((Int) -> ())?
   @State var showInstrument: ((Int) -> ())?
   
   var body: some View {
     VStack(alignment: .leading, spacing: 5) {
-      HStack(spacing: 10) {
-        Text(post.author?.name ?? "")
-          .font(.bold(30))
-        if post.author?.isVerified == true {
-          Image(systemName: "checkmark.circle.fill")
-            .foregroundColor(.green)
+      if let author = post.author {
+        HStack(spacing: 10) {
+          Text(author.name)
+            .font(.bold(30))
+          if author.isVerified == true {
+            Image(systemName: "checkmark.circle.fill")
+              .foregroundColor(.green)
+          }
         }
       }
       Text(post.date.fullFormatString())
@@ -37,7 +37,7 @@ struct PostView: View {
       }
       if needShowComments {
         Button {
-          showComments(post.id)
+          showComments?(post.id)
         } label: {
           HStack(spacing: 10) {
             Image(systemName: "bubble.left")
@@ -53,6 +53,10 @@ struct PostView: View {
       .cornerRadius(10)
       .padding(.horizontal, 10)
       .padding(.vertical, 5)
+      .onTapGesture {
+        guard !needShowComments else { return }
+        showComments?(post.id)
+      }
   }
   
   private func textWithHashtags(_ text: String) -> Text {
