@@ -14,12 +14,14 @@ class CreatePostViewController: UIViewController {
   private let userDefaultsService = UserDefaultsService()
   
   private var instrumentsIDs: [Int] = []
+  var onDidCreatePost: (() -> ())?
   
   @IBAction func createPostPressed() {
     let authorID = userDefaultsService.getUserID() ?? 1
     networkService.createPost(authorID: authorID, text: textView.text, instruments: instrumentsIDs) { result in
       print(result)
       if result.id != nil {
+        self.onDidCreatePost?()
         self.navigationController?.popViewController(animated: true)
       }
     }
