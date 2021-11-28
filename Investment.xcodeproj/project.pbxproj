@@ -58,7 +58,6 @@
 		CAB5EE3427520E87002E149F /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3327520E87002E149F /* MessageRow.swift */; };
 		CAB5EE3727522D30002E149F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3627522D2F002E149F /* HomeViewModel.swift */; };
 		CAB5EE3927522D46002E149F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3827522D46002E149F /* HomeView.swift */; };
-		CAB5EE3D27522D81002E149F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE3C27522D81002E149F /* HomeViewController.swift */; };
 		CAB5EE4727523565002E149F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE4627523565002E149F /* RegisterView.swift */; };
 		CAB5EE74275298B8002E149F /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE69275298B8002E149F /* CommentsViewModel.swift */; };
 		CAB5EE75275298B8002E149F /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5EE6A275298B8002E149F /* CommentsView.swift */; };
@@ -132,7 +131,6 @@
 		CAB5EE3327520E87002E149F /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		CAB5EE3627522D2F002E149F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CAB5EE3827522D46002E149F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		CAB5EE3C27522D81002E149F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CAB5EE4627523565002E149F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		CAB5EE69275298B8002E149F /* CommentsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
 		CAB5EE6A275298B8002E149F /* CommentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
@@ -350,7 +348,6 @@
 			children = (
 				CAB5EE3627522D2F002E149F /* HomeViewModel.swift */,
 				CAB5EE3827522D46002E149F /* HomeView.swift */,
-				CAB5EE3C27522D81002E149F /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -533,7 +530,6 @@
 				CAB5EE8427529949002E149F /* Instrument.swift in Sources */,
 				CAB5EE75275298B8002E149F /* CommentsView.swift in Sources */,
 				CAB5EE982752B68E002E149F /* InstrumentDetailsViewModel.swift in Sources */,
-				CAB5EE3D27522D81002E149F /* HomeViewController.swift in Sources */,
 				CAB5EDE12751E2A6002E149F /* Color+Custom.swift in Sources */,
 				CAB5EE7C275298B8002E149F /* InstrumentView.swift in Sources */,
 				CAB5EE77275298B8002E149F /* ThreadViewModel.swift in Sources */,

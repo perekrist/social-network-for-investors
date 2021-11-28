@@ -28,11 +28,12 @@ class RegisterViewController: UIViewController {
         return
       }
       
-      guard let token = loginResult.token else {
+      guard let token = loginResult.token, let userID = loginResult.user_id else {
         BannerShowing.shared.showErrorBanner(loginResult.message ?? "Unexpected Error")
         return
       }
       UserDefaultsService().setUserToken(token)
+      UserDefaultsService().setUserID(userID)
       self.onDidAuthorize?()
       self.navigationController?.popViewController(animated: true)
       self.dismiss(animated: true, completion: nil)

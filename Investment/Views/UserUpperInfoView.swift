@@ -2,8 +2,6 @@
 //  SelfUserUpperInfoView.swift
 //  Investment
 //
-//  Created by Daniil on 28.11.2021.
-//
 
 import UIKit
 
@@ -25,21 +23,21 @@ class UserUpperInfoView: UIView {
       bellButton.isHidden = true
       settingsButton.isHidden = true
     }
-    
   }
- 
+  
   @IBAction func subscribeButtonPressed() {
+    
   }
   
   @IBAction func settingsButtonPressed() {
+    
   }
   
   @IBAction func bellButtonPressed() {
+    
   }
   
   @IBAction func backButtonPressed() {
+    
   }
-  
-  
-
 }

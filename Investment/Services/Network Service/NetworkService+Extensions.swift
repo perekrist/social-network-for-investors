@@ -6,7 +6,16 @@
 import Foundation
 import Alamofire
 
-// MARK: - Stocks
+// MARK: - Profile
+extension NetworkService {
+  func getAuthor(id: Int, completion: @escaping (Author) -> ()) {
+    baseRequest(url: "/user/\(id)", method: .get) { author in
+      completion(author)
+    }
+  }
+}
+
+// MARK: - Instrument
 extension NetworkService {
   func getInstruments(completion: @escaping ([Instrument]) -> ()) {
     baseRequest(url: "/financial_instrument?_start=0&_end=-1", method: .get) { instruments in

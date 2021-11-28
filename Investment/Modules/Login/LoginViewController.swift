@@ -24,12 +24,13 @@ class LoginViewController: UIViewController {
         return
       }
       
-      guard let token = loginResult.token else {
+      guard let token = loginResult.token, let userID = loginResult.user_id else {
         BannerShowing.shared.showErrorBanner(loginResult.message ?? "Unexpected Error")
         return
       }
       print(loginResult)
       UserDefaultsService().setUserToken(token)
+      UserDefaultsService().setUserID(userID)
       self.onDidAuthorize?()
     }
   }
