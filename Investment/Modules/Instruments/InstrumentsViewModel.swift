@@ -10,7 +10,19 @@ enum InstrumentsDestination {
 }
 
 class InstrumentsViewModel: ObservableObject {
+  @Published var searchText: String = "" {
+    didSet {
+      if searchText.isEmpty {
+        self.instruments = allInstruments
+      } else {
+        self.instruments = allInstruments.filter({ $0.name.contains(searchText) ||
+          $0.description.contains(searchText)
+        })
+      }
+    }
+  }
   @Published var instruments: [Instrument] = []
+  @Published var allInstruments: [Instrument] = []
   @Published var destination: InstrumentsDestination? {
     didSet {
       self.isLinkActive = true
@@ -42,6 +54,7 @@ class InstrumentsViewModel: ObservableObject {
   private func loadInstruments() {
     networkService.getInstruments { instruments in
       self.instruments = instruments
+      self.allInstruments = instruments
     }
   }
 }
