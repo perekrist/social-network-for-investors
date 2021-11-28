@@ -45,11 +45,13 @@ class CreatePostViewController: UIViewController, UITextViewDelegate {
       authorID = 1
     }
     var instruments: [Int] = []
+    var finalText = NSString(string: textView.text ?? "")
     
     if let safeArray = myInputAccessoryView.mentionListenerr?.mentions {
       for mention in safeArray {
         guard let temp = mention.object as? InstrumentForMention else { continue }
         instruments.append(temp.id)
+        finalText = finalText.replacingOccurrences(of: temp.name, with:"#" + temp.name) as NSString
       }
     }
   
