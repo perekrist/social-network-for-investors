@@ -9,6 +9,12 @@ import UIKit
 
 class CreatePostViewController: UIViewController {
   
+  
+  @IBAction func backButtonPressed() {
+    self.navigationController?.popViewController(animated: true)
+  }
+  
+  
   @IBOutlet weak var textView: UITextView!
   private let networkService = NetworkService()
   private let userDefaultsService = UserDefaultsService()
@@ -20,7 +26,11 @@ class CreatePostViewController: UIViewController {
     networkService.createPost(authorID: authorID, text: textView.text, instruments: instrumentsIDs) { result in
       print(result)
       if result.id != nil {
-        self.navigationController?.popViewController(animated: true)
+        BannerShowing().showInfoBanner("Success!")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+          self.navigationController?.popViewController(animated: true)
+        }
+        
       }
     }
   }
