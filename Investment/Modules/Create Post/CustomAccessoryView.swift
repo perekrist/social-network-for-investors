@@ -77,7 +77,7 @@ extension CustomMentionsTableViewDataManager: UITableViewDataSource {
 
 
 class CustomAccessoryView: UIView {
-  struct Attribute: AttributeContainer {
+  struct Attribute: SZMentionsSwift.AttributeContainer {
     var name: NSAttributedString.Key
     var value: Any
   }
@@ -85,7 +85,7 @@ class CustomAccessoryView: UIView {
   
   var textView: UITextView = UITextView()
   private let mentionsTableView = UITableView()
-  private let mentionAttributes: [AttributeContainer] = [
+  private let mentionAttributes: [SZMentionsSwift.AttributeContainer] = [
     Attribute(
       name: .foregroundColor,
       value: UIColor.primary
@@ -97,9 +97,9 @@ class CustomAccessoryView: UIView {
     Attribute(
       name: .backgroundColor,
       value: UIColor.accent
-    ),
+    )
   ]
-  private let defaultAttributes: [AttributeContainer] = [
+  private let defaultAttributes: [SZMentionsSwift.AttributeContainer] = [
     Attribute(
       name: .foregroundColor,
       value: UIColor.black
